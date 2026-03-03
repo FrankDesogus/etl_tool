@@ -16,7 +16,7 @@ from io_excel import sheet_is_orders, extract_table_with_provenance, canonicaliz
 from suppliers import build_suppliers_clean, deduplicate_suppliers
 from certifications import split_certifications
 from orders import clean_and_match_orders
-from report import write_outputs
+from report import write_outputs, build_orders_supplier_cert_report
 from utils import now_iso
 
 
@@ -27,6 +27,7 @@ def _write_non_cdc_pack(
     df_sup_dedup: pd.DataFrame,
     df_certs: pd.DataFrame,
     df_orders_clean: pd.DataFrame,
+    df_orders_supplier_cert_report: pd.DataFrame,
     norm_logs: list,
     match_warnings: list,
     unmatched_orders: list,
@@ -47,6 +48,9 @@ def _write_non_cdc_pack(
     # Filter orders (NON-CDC)
     df_orders_non_cdc = df_orders_clean[df_orders_clean["job_cdc_is_cdc"] == False].copy()
     non_cdc_order_ids = set(df_orders_non_cdc["order_id"].astype(str))
+    df_orders_supplier_cert_report_non_cdc = df_orders_supplier_cert_report[
+        df_orders_supplier_cert_report["order_id"].astype(str).isin(non_cdc_order_ids)
+    ].copy()
 
     # Filter match_warnings for those orders
     df_match_warnings_all = pd.DataFrame(match_warnings)
@@ -78,6 +82,9 @@ def _write_non_cdc_pack(
 
     # Write NON-CDC outputs (same filenames, separate folder)
     df_orders_non_cdc.to_csv(os.path.join(non_cdc_dir, "orders_clean.csv"), index=False)
+    df_orders_supplier_cert_report_non_cdc.to_csv(
+        os.path.join(non_cdc_dir, "orders_supplier_cert_report.csv"), index=False
+    )
     df_match_warnings_non_cdc.to_csv(os.path.join(non_cdc_dir, "match_warnings.csv"), index=False)
     df_unmatched_orders_non_cdc.to_csv(os.path.join(non_cdc_dir, "unmatched_orders.csv"), index=False)
     df_norm_non_cdc.to_csv(os.path.join(non_cdc_dir, "normalization_log.csv"), index=False)
@@ -92,6 +99,7 @@ def _write_non_cdc_pack(
         "run_finished_at": now_iso(),
         "counts": {
             "orders_rows_clean": int(len(df_orders_non_cdc)),
+            "orders_supplier_cert_report_rows": int(len(df_orders_supplier_cert_report_non_cdc)),
             "match_warnings": int(len(df_match_warnings_non_cdc)),
             "unmatched_orders": int(len(df_unmatched_orders_non_cdc)),
             "normalization_ops_orders": int(len(df_norm_non_cdc)),
@@ -186,6 +194,11 @@ def main():
         match_warnings,
         unmatched_orders,
     )
+    df_orders_supplier_cert_report = build_orders_supplier_cert_report(
+        orders=df_orders_clean,
+        suppliers=df_sup_dedup,
+        certs=df_certs,
+    )
 
     summary = {
         "source_file": os.path.basename(xlsx_path),
@@ -196,6 +209,7 @@ def main():
             "sheets_total": len(wb.sheetnames),
             "orders_rows_read": int(len(df_orders_raw)),
             "orders_rows_clean": int(len(df_orders_clean)),
+            "orders_supplier_cert_report_rows": int(len(df_orders_supplier_cert_report)),
             "suppliers_rows_read": int(len(df_sup_all)),
             "suppliers_rows_clean": int(len(df_sup_dedup)),
             "suppliers_dedup_merged": int(max(0, len(df_sup_all) - len(df_sup_dedup))),
@@ -213,6 +227,7 @@ def main():
         suppliers=df_sup_dedup,
         certs=df_certs,
         orders=df_orders_clean,
+        orders_supplier_cert_report=df_orders_supplier_cert_report,
         norm_logs=norm_logs,
         match_warnings=match_warnings,
         unmatched_orders=unmatched_orders,
@@ -228,6 +243,7 @@ def main():
             df_sup_dedup=df_sup_dedup,
             df_certs=df_certs,
             df_orders_clean=df_orders_clean,
+            df_orders_supplier_cert_report=df_orders_supplier_cert_report,
             norm_logs=norm_logs,
             match_warnings=match_warnings,
             unmatched_orders=unmatched_orders,
