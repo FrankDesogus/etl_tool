@@ -2,6 +2,7 @@ import json
 import os
 import pandas as pd
 from typing import Any, Dict, List
+from normalize import normalize_business_name
 from utils import now_iso
 
 
@@ -22,6 +23,7 @@ def build_orders_supplier_cert_report(
         "job_cdc_is_cdc",
         "supplier_text_raw",
         "supplier_text_normalized",
+        "order_supplier_key",
         "matched_supplier_id",
         "match_method",
         "match_score",
@@ -30,7 +32,7 @@ def build_orders_supplier_cert_report(
         "source_sheet",
         "source_row",
     ]
-    supplier_cols = ["supplier_id", "supplier_name_normalized", "supplier_category"]
+    supplier_cols = ["supplier_id", "supplier_name_normalized", "supplier_name_key", "supplier_category"]
 
     if orders is None or orders.empty:
         return pd.DataFrame(
@@ -58,20 +60,24 @@ def build_orders_supplier_cert_report(
         if c not in suppliers_work.columns:
             suppliers_work[c] = ""
 
-    # Build fallback lookup by exact normalized supplier name.
+    if "order_supplier_key" not in orders_work.columns:
+        orders_work["order_supplier_key"] = orders_work["supplier_text_normalized"].apply(normalize_business_name)
+    if "supplier_name_key" not in suppliers_work.columns:
+        suppliers_work["supplier_name_key"] = suppliers_work["supplier_name_normalized"].apply(normalize_business_name)
+
     fallback_lookup = (
-        suppliers_work[["supplier_name_normalized", "supplier_id"]]
-        .dropna(subset=["supplier_name_normalized", "supplier_id"])
-        .drop_duplicates(subset=["supplier_name_normalized"], keep="first")
+        suppliers_work[["supplier_name_key", "supplier_id"]]
+        .dropna(subset=["supplier_name_key", "supplier_id"])
+        .drop_duplicates(subset=["supplier_name_key"], keep="first")
         .rename(columns={"supplier_id": "fallback_supplier_id"})
     )
 
     report_df = orders_work.merge(
         fallback_lookup,
         how="left",
-        left_on="supplier_text_normalized",
-        right_on="supplier_name_normalized",
-    ).drop(columns=["supplier_name_normalized"], errors="ignore")
+        left_on="order_supplier_key",
+        right_on="supplier_name_key",
+    ).drop(columns=["supplier_name_key"], errors="ignore")
 
     report_df["supplier_id_effective"] = report_df["matched_supplier_id"].where(
         report_df["matched_supplier_id"].astype(str).str.strip() != "",

@@ -2,7 +2,7 @@ import json
 import pandas as pd
 from typing import Any, Dict, List, Tuple
 from rapidfuzz import fuzz, process
-from normalize import normalize_case_policy, normalize_text, add_norm_log
+from normalize import normalize_business_name, normalize_case_policy, normalize_text, add_norm_log
 
 def build_suppliers_clean(df_sup: pd.DataFrame, supplier_category: str,
                           norm_logs: List[Dict[str, Any]]) -> Tuple[pd.DataFrame, pd.DataFrame]:
@@ -13,10 +13,18 @@ def build_suppliers_clean(df_sup: pd.DataFrame, supplier_category: str,
 
         name_raw = r.get("supplier_name_raw")
         name_norm = normalize_case_policy(name_raw)
+        name_key = normalize_business_name(name_raw)
         add_norm_log(norm_logs, entity="supplier", record_id=temp_key,
                      field_name="supplier_name_raw", original_value=name_raw,
                      normalized_value=name_norm,
                      reason="text_trim_invisible_collapse + UPPER",
+                     source_file=sf, source_sheet=sh, source_row=sr,
+                     source_column="RAGIONE SOCIALE")
+
+        add_norm_log(norm_logs, entity="supplier", record_id=temp_key,
+                     field_name="supplier_name_key", original_value=name_raw,
+                     normalized_value=name_key,
+                     reason="business_name_normalization",
                      source_file=sf, source_sheet=sh, source_row=sr,
                      source_column="RAGIONE SOCIALE")
 
@@ -45,6 +53,7 @@ def build_suppliers_clean(df_sup: pd.DataFrame, supplier_category: str,
             "supplier_id": "",  # assegnato dopo dedup
             "supplier_name_raw": normalize_text(name_raw),
             "supplier_name_normalized": name_norm,
+            "supplier_name_key": name_key,
             "supplier_category": json.dumps([supplier_category], ensure_ascii=False),
             "supplier_type": norm_field("supplier_type"),
             "supply_scope": norm_field("supply_scope"),
