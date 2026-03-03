@@ -1,0 +1,740 @@
+supplier_id,supplier_name_raw,supplier_name_normalized,supplier_category,supplier_type,supply_scope,certifications_raw,kpi_quality,kpi_time,distributor_or_broker,notes,source_file,provenance,extra_fields
+SUP_4159415505829127593,1855,1855,"[""ITEM E SERVIZI INTERNI""]",DISTRIBUTORE,FORNITURA CAFFE',nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 28, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_8946545976846238318,A. PONTECORVO S.P.A.,A. PONTECORVO S.P.A.,"[""STORICO""]","TIPO D
+TIPO DISTRIBUTORE
+Name: 10, dtype: object; TIPO D
+TIPO DISTRIBUTORE
+Name: 10, dtype: object",MATERIE PRIME,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""STORICO"", ""row"": 11, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_8066959339184381404,A.B. ESSE S.P.A.,A.B. ESSE S.P.A.,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO D
+TIPO COSTRUTTORE
+Name: 24, dtype: object; TIPO D
+TIPO COSTRUTTORE
+Name: 24, dtype: object",APPARECCHIATURE LASER,nan; QUESTIONARIO PRE-QUALIFICA in attesa approvazione Spartaco,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 25, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 64, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_4003026683781222991,ABIS CIRCUITS CO. LIMITED,ABIS CIRCUITS CO. LIMITED,"[""STORICO""]","TIPO NaN
+TIPO COSTRUTTORE
+Name: 13, dtype: object; TIPO NaN
+TIPO COSTRUTTORE
+Name: 13, dtype: object",COSTRUTTORE CIRCUITI STAMPATI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""STORICO"", ""row"": 14, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_6885422043853362609,ACAL BFI ITALY srl,ACAL BFI ITALY SRL,"[""CLASSE C (coats)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO C
+TIPO DISTRIBUTORE
+Name: 13, dtype: object; TIPO C
+TIPO DISTRIBUTORE
+Name: 13, dtype: object",COMPONENTI ELETTRONICI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE C (coats)"", ""row"": 14, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 49, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_5259020484714479308,ACX DESIGN S.R.L.,ACX DESIGN S.R.L.,"[""CLASSE A (progettazione)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO A
+TIPO COSTRUTTORE
+Name: 10, dtype: object; TIPO A
+TIPO COSTRUTTORE
+Name: 10, dtype: object",COSTRUTTORE CIRCUITI STAMPATI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE A (progettazione)"", ""row"": 11, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 53, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_8935105067253007922,ADVAM S.R.L.,ADVAM S.R.L.,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO D
+TIPO DISTRIBUTORE
+Name: 29, dtype: object; TIPO D
+TIPO DISTRIBUTORE
+Name: 29, dtype: object",COMPONENTI ELETTRONICI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 30, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 79, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_2927027388811480020,AFAR S.R.L.,AFAR S.R.L.,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO D
+TIPO BROKER
+Name: 13, dtype: object; TIPO D
+TIPO BROKER
+Name: 13, dtype: object",COMPONENTI ELETTRONICI,nan; ISO 9001:2015 / EN 9120:2018,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 14, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 23, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_4485086961438581867,AIRSERVICE S.R.L.,AIRSERVICE S.R.L.,"[""CLASSE E (generali stabilimento"", ""ITEM E SERVIZI INTERNI""]","TIPO E
+TIPO ASSISTENZA TECNICA
+Name: 12, dtype: object; TIPO E
+TIPO ASSISTENZA TECNICA
+Name: 12, dtype: object",INSTALLAZIONE E ASSISTENZA IMPIANTI TECNOLOGICI,nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE E (generali stabilimento"", ""row"": 13, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 9, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_5512617973696217128,ALANTYS TECHNOLOGY,ALANTYS TECHNOLOGY,"[""STORICO""]","TIPO NaN
+TIPO BROKER
+Name: 11, dtype: object; TIPO NaN
+TIPO BROKER
+Name: 11, dtype: object",COMPONENTI ELETTRONICI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""STORICO"", ""row"": 12, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_2728851770977696432,ALHOF S.p.A.,ALHOF S.P.A.,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO D
+TIPO DISTRIBUTORE
+Name: 17, dtype: object; TIPO D
+TIPO DISTRIBUTORE
+Name: 17, dtype: object",COMPONENTI ELETTROMECCANICI,nan; ISO 9001:2015 / EN 9120:2018,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 18, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 45, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_3747923048135586383,ALLUMINIO DI QUALITA',ALLUMINIO DI QUALITA',"[""CLASSE B (built to print)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO B
+TIPO DISTRIBUTORE
+Name: 40, dtype: object; TIPO B
+TIPO DISTRIBUTORE
+Name: 40, dtype: object",MATERIE PRIME,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE B (built to print)"", ""row"": 41, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 93, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_2813523151639088290,ALMET ITALIA S.r.l.,ALMET ITALIA S.R.L.,"[""CLASSE B (built to print)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO B
+TIPO DISTRIBUTORE
+Name: 39, dtype: object; TIPO B
+TIPO DISTRIBUTORE
+Name: 39, dtype: object",MATERIE PRIME,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE B (built to print)"", ""row"": 40, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 92, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_5677719391596986912,AMADA,AMADA,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI INTERNI""]","TIPO D
+TIPO COSTRUTTORE
+Name: 42, dtype: object; TIPO D
+TIPO COSTRUTTORE
+Name: 42, dtype: object",MACCHINARI PER PRODUZIONE,nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 43, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 25, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_4831061865741099220,AMINSTRUMENTS,AMINSTRUMENTS,"[""CLASSE E (generali stabilimento"", ""ITEM E SERVIZI INTERNI""]","TIPO E
+TIPO PRODUTTORE
+Name: 32, dtype: object; TIPO E
+TIPO PRODUTTORE
+Name: 32, dtype: object",PRODOTTI E SERVIZI ESD / CLEAN ROOM,nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE E (generali stabilimento"", ""row"": 33, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 41, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_8832984891523241213,ANGELANTONI TEST TECHNOLOGIES S.R.L.,ANGELANTONI TEST TECHNOLOGIES S.R.L.,"[""CLASSE E (generali stabilimento"", ""ITEM E SERVIZI INTERNI""]","TIPO E
+TIPO PRODUTTORE
+Name: 34, dtype: object; TIPO E
+TIPO PRODUTTORE
+Name: 34, dtype: object",SIMULAZIONI - CALIBRAZIONI,nan; nan,nan,ISO 9001:2015,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE E (generali stabilimento"", ""row"": 35, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 49, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_1594520620626369482,ANTINCENDIO 2005,ANTINCENDIO 2005,"[""CLASSE E (generali stabilimento"", ""ITEM E SERVIZI INTERNI""]","TIPO E
+TIPO SERVIZI
+Name: 16, dtype: object; TIPO E
+TIPO SERVIZI
+Name: 16, dtype: object","ANTINCENDIO, MANUTENZIONE ESTINTORI",nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE E (generali stabilimento"", ""row"": 17, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 15, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_3066011515753828494,ARROW ELECTRONICS INC,ARROW ELECTRONICS INC,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO D
+TIPO DISTRIBUTORE
+Name: 38, dtype: object; TIPO D
+TIPO DISTRIBUTORE
+Name: 38, dtype: object",COMPONENTI ELETTRONICI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 39, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 90, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_5136429958611442126,ASSELTECH S.R.L.,ASSELTECH S.R.L.,"[""CLASSE B (built to print)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO B
+TIPO COSTRUTTORE
+Name: 17, dtype: object; TIPO B
+TIPO COSTRUTTORE
+Name: 17, dtype: object",MONTAGGIO SCHEDE ELETTRONICHE,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE B (built to print)"", ""row"": 18, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 29, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_5004336497437189384,AVIATRONIK TRESCAL S.p.A.,AVIATRONIK TRESCAL S.P.A.,"[""CLASSE A (progettazione)"", ""CLASSE C (coats)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO A
+TIPO DISTRIBUTORE
+Name: 14, dtype: object; TIPO A
+TIPO DISTRIBUTORE
+Name: 14, dtype: object",APPARECCHIATURE ELETTRONICHE,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE A (progettazione)"", ""row"": 15, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""CLASSE C (coats)"", ""row"": 11, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 71, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_3407408735746686561,BARBIERI S.R.L.,BARBIERI S.R.L.,"[""CLASSE E (generali stabilimento"", ""ITEM E SERVIZI INTERNI""]","TIPO E
+TIPO DISTRIBUTORE
+Name: 28, dtype: object; TIPO E
+TIPO DISTRIBUTORE
+Name: 28, dtype: object",PRODOTTI CHIMICI (ALPHA),nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE E (generali stabilimento"", ""row"": 29, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 39, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_7542732991525812468,BELOTTI SISTEMI,BELOTTI SISTEMI,"[""CLASSE E (generali stabilimento"", ""ITEM E SERVIZI INTERNI""]","TIPO E
+TIPO DISTRIBUTORE
+Name: 41, dtype: object; TIPO E
+TIPO DISTRIBUTORE
+Name: 41, dtype: object",nan,nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE E (generali stabilimento"", ""row"": 42, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 45, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_8273397182847123907,BERNER,BERNER,"[""CLASSE E (generali stabilimento"", ""ITEM E SERVIZI INTERNI""]","TIPO E
+TIPO NaN
+Name: 36, dtype: object; TIPO E
+TIPO NaN
+Name: 36, dtype: object",PRODOTTI VARI PER PRODUZIONE,nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE E (generali stabilimento"", ""row"": 37, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 29, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_4062532336005468018,BOSSARD ITALIA S.R.L.,BOSSARD ITALIA S.R.L.,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO D
+TIPO DISTRIBUTORE
+Name: 12, dtype: object; TIPO D
+TIPO DISTRIBUTORE
+Name: 12, dtype: object",DISTRIBUTORE VITERIA,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 13, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 18, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_602208219744580945,BROWNELL LTD,BROWNELL LTD,"[""CLASSE C (coats)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO C
+TIPO COSTRUTTORE
+Name: 12, dtype: object; TIPO C
+TIPO COSTRUTTORE
+Name: 12, dtype: object",PRODOTTI A CATALOGO,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE C (coats)"", ""row"": 13, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 47, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_7633915132558210915,BRUNETTI & FIGLIO S.N.C.,BRUNETTI & FIGLIO S.N.C.,"[""CLASSE B (built to print)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO B
+TIPO SUBFORNITORE
+Name: 7, dtype: object; TIPO B
+TIPO SUBFORNITORE
+Name: 7, dtype: object",PROCESSI DI VERNICIATURA TRATTAMENTI GALVANICI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE B (built to print)"", ""row"": 8, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 8, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_4408138793370033306,C&C S.R.L.,C&C S.R.L.,"[""CLASSE A (progettazione)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO A
+TIPO FORNITORE A SPECIFICA
+Name: 13, dtype: object; TIPO A
+TIPO FORNITORE A SPECIFICA
+Name: 13, dtype: object",nan,nan; EN 9100:2018,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE A (progettazione)"", ""row"": 14, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 59, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_4163961972732336954,CABIOTEC S.R.L.,CABIOTEC S.R.L.,"[""CLASSE D (distributori)"", ""CLASSE E (generali stabilimento"", ""ITEM E SERVIZI INTERNI""]","TIPO D
+TIPO DISTRIBUTORE
+Name: 50, dtype: object; TIPO D
+TIPO DISTRIBUTORE
+Name: 50, dtype: object","Materiali di consumo per il montaggio superficiale (SMT)
+e tradizionale di schede elettroniche.",nan; nan,nan,ISO 9001:2015 - certificato n. 60506,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 51, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""CLASSE E (generali stabilimento"", ""row"": 34, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 48, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_3285462131869320214,CATAPANO MAURO,CATAPANO MAURO,"[""CLASSE E (generali stabilimento"", ""ITEM E SERVIZI INTERNI""]","TIPO E
+TIPO LIBERO PROFESSIONISTA
+Name: 13, dtype: object; TIPO E
+TIPO LIBERO PROFESSIONISTA
+Name: 13, dtype: object",ASSISTENZA IMPIANTI IDRAULICI,nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE E (generali stabilimento"", ""row"": 14, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 10, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_4230896500129940975,CDP,CDP,"[""CLASSE E (generali stabilimento"", ""ITEM E SERVIZI INTERNI""]","TIPO E
+TIPO SERVIZI
+Name: 37, dtype: object; TIPO E
+TIPO SERVIZI
+Name: 37, dtype: object",TIPOGRAFIA,nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE E (generali stabilimento"", ""row"": 38, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 30, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_6200629265699544338,CE.CA.SA. S.R.L.,CE.CA.SA. S.R.L.,"[""CLASSE B (built to print)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO B
+TIPO COSTRUTTORE
+Name: 20, dtype: object; TIPO B
+TIPO COSTRUTTORE
+Name: 20, dtype: object",LAVORAZIONI MECCANICHE,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE B (built to print)"", ""row"": 21, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 34, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_364703117488594412,CELTE S.p.A.,CELTE S.P.A.,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO D
+TIPO DISTRIBUTORE
+Name: 28, dtype: object; TIPO D
+TIPO DISTRIBUTORE
+Name: 28, dtype: object",COMPONENTI ELETTRONICI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 29, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 78, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_1036693177035908593,CIRCUITI STAMPATI S.R.L.,CIRCUITI STAMPATI S.R.L.,"[""CLASSE B (built to print)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO B
+TIPO SUBFORNITORE
+Name: 8, dtype: object; TIPO B
+TIPO SUBFORNITORE
+Name: 8, dtype: object",CIRCUITI STAMPATI MULTISTRATO RIGIDI E PER APPLICAZIONI MICROONDE,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE B (built to print)"", ""row"": 9, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 9, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_1219416752559146236,CISEL S.R.L.,CISEL S.R.L.,"[""CLASSE B (built to print)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO B
+TIPO COSTRUTTORE
+Name: 34, dtype: object; TIPO B
+TIPO COSTRUTTORE
+Name: 34, dtype: object",CIRCUITI STAMPATI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE B (built to print)"", ""row"": 35, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 69, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_5320097176537901106,CISTELAIER S.p.A.,CISTELAIER S.P.A.,"[""CLASSE B (built to print)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO B
+TIPO COSTRUTTORE
+Name: 36, dtype: object; TIPO B
+TIPO COSTRUTTORE
+Name: 36, dtype: object",CIRCUITI STAMPATI,nan; ISO 9001:2015 / EN 9100:2018,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE B (built to print)"", ""row"": 37, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 76, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_808218281920533500,CML F.LLI LIBERATI SRL,CML F.LLI LIBERATI SRL,"[""CLASSE B (built to print)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO B
+TIPO COSTRUTTORE
+Name: 18, dtype: object; TIPO B
+TIPO COSTRUTTORE
+Name: 18, dtype: object",LAVORAZIONI MECCANICHE,nan; ISO 9001:2015 - certificato n. IT312812,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE B (built to print)"", ""row"": 19, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 31, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_6758147085173174577,COMELEC S.R.L.,COMELEC S.R.L.,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI INTERNI""]","TIPO D
+TIPO DISTRIBUTORE
+Name: 47, dtype: object; TIPO D
+TIPO DISTRIBUTORE
+Name: 47, dtype: object",nan,nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 48, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 37, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_5903614860450920835,CONRAD ELECTRONIC ITALIA S.r.l.,CONRAD ELECTRONIC ITALIA S.R.L.,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO D
+TIPO DISTRIBUTORE
+Name: 39, dtype: object; TIPO D
+TIPO DISTRIBUTORE
+Name: 39, dtype: object",COMPONENTI ELETTRONICI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 40, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 91, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_7750062822869888211,CONTRADATA,CONTRADATA,"[""STORICO""]","TIPO NaN
+TIPO DISTRIBUTORE
+Name: 14, dtype: object; TIPO NaN
+TIPO DISTRIBUTORE
+Name: 14, dtype: object",PC INDUSTRIALI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""STORICO"", ""row"": 15, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_7091032332535812936,CONVERGE,CONVERGE,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO D
+TIPO DISTRIBUTORE
+Name: 32, dtype: object; TIPO D
+TIPO DISTRIBUTORE
+Name: 32, dtype: object",COMPONENTI ELETTRONICI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 33, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 82, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_4359817916978970665,CSA TEAM S.R.L.,CSA TEAM S.R.L.,"[""CLASSE E (generali stabilimento"", ""ITEM E SERVIZI INTERNI""]","TIPO E
+TIPO CONSULENTE
+Name: 26, dtype: object; TIPO E
+TIPO CONSULENTE
+Name: 26, dtype: object",SICUREZZA NEI LUOGHI DI LAVORO,nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE E (generali stabilimento"", ""row"": 27, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 16, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_988411792829340421,D & P Electronic Systems Srl,D & P ELECTRONIC SYSTEMS SRL,"[""CLASSE A (progettazione)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO A
+TIPO FORNITORE A SPECIFICA
+Name: 7, dtype: object; TIPO A
+TIPO FORNITORE A SPECIFICA
+Name: 7, dtype: object","PROGETTAZIONE HW/SW, SVILUPPO DOCUMENTAZIONE E FORNITURA SCHEDE DIGITALI",nan; ISO 9001:2015 - certificato n. 12963,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE A (progettazione)"", ""row"": 8, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 10, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_1769015406742356185,D.P.I.,D.P.I.,"[""CLASSE E (generali stabilimento"", ""ITEM E SERVIZI INTERNI""]","TIPO E
+TIPO DISTRIBUTORE
+Name: 27, dtype: object; TIPO E
+TIPO DISTRIBUTORE
+Name: 27, dtype: object",PRODOTTI CHIMICI (VIGON),nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE E (generali stabilimento"", ""row"": 28, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 38, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_1362513854579571370,D.S.A,D.S.A,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI INTERNI""]","TIPO D
+TIPO DISTRIBUTORE
+Name: 49, dtype: object; TIPO D
+TIPO DISTRIBUTORE
+Name: 49, dtype: object",nan,nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 50, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 46, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_3591434645509264740,DATAONE,DATAONE,"[""CLASSE E (generali stabilimento"", ""ITEM E SERVIZI INTERNI""]","TIPO E
+TIPO DISTRIBUTORE
+Name: 40, dtype: object; TIPO E
+TIPO DISTRIBUTORE
+Name: 40, dtype: object",LICENZE SOFTWARE,nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE E (generali stabilimento"", ""row"": 41, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 17, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_5369556741092040777,DB ELECTRONIC INSTRUMENTS S.R.L.,DB ELECTRONIC INSTRUMENTS S.R.L.,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO D
+TIPO DISTRIBUTORE
+Name: 22, dtype: object; TIPO D
+TIPO DISTRIBUTORE
+Name: 22, dtype: object",COMPONENTI ELETTRONICI,nan; QUESTIONARIO PRE-QUALIFICA in attesa approvazione Spartaco,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 23, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 61, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_1991147364829902187,DEEP LAB S.R.L.,DEEP LAB S.R.L.,"[""CLASSE A (progettazione)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO A
+TIPO COSTRUTTORE
+Name: 12, dtype: object; TIPO A
+TIPO COSTRUTTORE
+Name: 12, dtype: object","PROGETTAZIONE E REALIZZAZIONE MACCHINARI, PARTICOLARI MECCANICI E IMPIANTI",nan; QUESTIONARIO PRE-QUALIFICA,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE A (progettazione)"", ""row"": 13, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 58, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_5288377155246888335,DIGI-KEY,DIGI-KEY,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO D
+TIPO DISTRIBUTORE
+Name: 8, dtype: object; TIPO D
+TIPO DISTRIBUTORE
+Name: 8, dtype: object",COMPONENTI ELETTRONICI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 9, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 12, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_3846349855479171383,DIMAC RED S.p.A.,DIMAC RED S.P.A.,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO D
+TIPO DISTRIBUTORE
+Name: 33, dtype: object; TIPO D
+TIPO DISTRIBUTORE
+Name: 33, dtype: object",COMPONENTI ELETTRONICI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 34, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 83, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_4640225959113122904,DISTRELEC ITALIA S.R.L.,DISTRELEC ITALIA S.R.L.,"[""STORICO""]","TIPO D
+TIPO DISTRIBUTORE
+Name: 18, dtype: object; TIPO D
+TIPO DISTRIBUTORE
+Name: 18, dtype: object",COMPONENTI ELETTRONICI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""STORICO"", ""row"": 19, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_3173842864861044024,E.S.E. GEA S.R.L.,E.S.E. GEA S.R.L.,"[""CLASSE E (generali stabilimento"", ""ITEM E SERVIZI INTERNI""]","TIPO E
+TIPO SERVIZI
+Name: 10, dtype: object; TIPO E
+TIPO SERVIZI
+Name: 10, dtype: object",MANUTENZIONE FABBRICATI,nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE E (generali stabilimento"", ""row"": 11, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 7, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_4757516719345007999,EDMUND OPTICS LTD,EDMUND OPTICS LTD,"[""ITEM E SERVIZI AL CLIENTE""]","TIPO D
+TIPO COSTRUTTORE
+Name: 47, dtype: object; TIPO D
+TIPO COSTRUTTORE
+Name: 47, dtype: object",PRODOTTI A SPECIFICA,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 48, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_379145174749848506,EL.TREV. S.R.L.,EL.TREV. S.R.L.,"[""CLASSE B (built to print)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO B
+TIPO COSTRUTTORE
+Name: 25, dtype: object; TIPO B
+TIPO COSTRUTTORE
+Name: 25, dtype: object",MONTAGGIO SCHEDE ELETTRONICHE,nan; ISO 9001:2015 / EN 9100:2018,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE B (built to print)"", ""row"": 26, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 40, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_4305837242445261703,ELCO S.P.A.,ELCO S.P.A.,"[""CLASSE B (built to print)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO B
+TIPO SUBFORNITORE
+Name: 19, dtype: object; TIPO B
+TIPO SUBFORNITORE
+Name: 19, dtype: object","CIRCUITI STAMPATI MULTISTRATO RIGIDI
+E PER APPLICAZIONI MICROONDE",nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE B (built to print)"", ""row"": 20, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 33, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_6335463593384844250,ELESA S.p.A.,ELESA S.P.A.,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO D
+TIPO PRODUTTORE
+Name: 36, dtype: object; TIPO D
+TIPO PRODUTTORE
+Name: 36, dtype: object",COMPONENTI INDUSTRIALI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 37, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 86, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_3426428280696154433,ELETTROLEGHE S.R.L.,ELETTROLEGHE S.R.L.,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO D
+TIPO DISTRIBUTORE
+Name: 19, dtype: object; TIPO D
+TIPO DISTRIBUTORE
+Name: 19, dtype: object",MATERIE PRIME,nan; QUESTIONARIO PRE-QUALIFICA,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 20, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 54, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_2084053279417800679,ELETTRONICA SRLS,ELETTRONICA SRLS,"[""CLASSE B (built to print)"", ""ITEM E SERVIZI AL CLIENTE"", ""NON UTILIZZATI (>2 ANNI)""]","TIPO B
+TIPO COSTRUTTORE
+Name: 13, dtype: object; TIPO B
+TIPO COSTRUTTORE
+Name: 13, dtype: object",MONTAGGIO SCHEDE ELETTRONICHE,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE B (built to print)"", ""row"": 14, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""NON UTILIZZATI (>2 ANNI)"", ""row"": 9, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 25, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_3721355417557230116,ELMACOM S.R.L.,ELMACOM S.R.L.,"[""CLASSE B (built to print)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO B
+TIPO COSTRUTTORE
+Name: 16, dtype: object; TIPO B
+TIPO COSTRUTTORE
+Name: 16, dtype: object",CABLAGGI,nan; ISO 9001:2015 - n.CERT-08364-2001-AQ-ROM-SINCERT,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE B (built to print)"", ""row"": 17, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 28, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_2552595561967725919,ETMAN,ETMAN,"[""CLASSE E (generali stabilimento"", ""ITEM E SERVIZI INTERNI""]","TIPO E
+TIPO CONSULENTE
+Name: 23, dtype: object; TIPO E
+TIPO CONSULENTE
+Name: 23, dtype: object",CERTIFICAZIONE 14001 E SA8000,nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE E (generali stabilimento"", ""row"": 24, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 18, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_2927598786926949250,EUROSERVICE,EUROSERVICE,"[""CLASSE E (generali stabilimento"", ""ITEM E SERVIZI INTERNI""]","TIPO E
+TIPO SERVIZI
+Name: 24, dtype: object; TIPO E
+TIPO SERVIZI
+Name: 24, dtype: object",TRASPORTI,nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE E (generali stabilimento"", ""row"": 25, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 19, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_8035458520462283088,F.C.E. S.r.l.,F.C.E. S.R.L.,"[""CLASSE B (built to print)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO B
+TIPO COSTRUTTORE
+Name: 38, dtype: object; TIPO B
+TIPO COSTRUTTORE
+Name: 38, dtype: object",LAVORAZIONI MECCANICHE,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE B (built to print)"", ""row"": 39, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 87, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_6917503315494128228,F.LLI GUERRERO S.R.L.,F.LLI GUERRERO S.R.L.,"[""CLASSE B (built to print)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO B
+TIPO COSTRUTTORE
+Name: 14, dtype: object; TIPO B
+TIPO COSTRUTTORE
+Name: 14, dtype: object",VERNICIATURA,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE B (built to print)"", ""row"": 15, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 26, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_3324482495551179492,FARNELL ITALIA S.R.L.,FARNELL ITALIA S.R.L.,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO D
+TIPO DISTRIBUTORE
+Name: 9, dtype: object; TIPO D
+TIPO DISTRIBUTORE
+Name: 9, dtype: object",COMPONENTI ELETTRONICI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 10, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 13, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_746869449220971172,FENICE MULTISERVIZI S.R.L.,FENICE MULTISERVIZI S.R.L.,"[""CLASSE E (generali stabilimento"", ""ITEM E SERVIZI INTERNI""]","TIPO E
+TIPO SERVIZI
+Name: 11, dtype: object; TIPO E
+TIPO SERVIZI
+Name: 11, dtype: object","PULIZIA, SFALCIO ERBA, FACCHINAGGIO",nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE E (generali stabilimento"", ""row"": 12, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 8, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_2631295261703637551,FG MECCANICA di FABRIZI GIORGIO,FG MECCANICA DI FABRIZI GIORGIO,"[""CLASSE B (built to print)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO B
+TIPO COSTRUTTORE
+Name: 31, dtype: object; TIPO B
+TIPO COSTRUTTORE
+Name: 31, dtype: object",LAVORAZIONI MECCANICHE,nan; QUESTIONARIO PRE-QUALIFICA in attesa approvazione Spartaco,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE B (built to print)"", ""row"": 32, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 66, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_3741856343344385245,FRANCO CORRADI & C. S.A.S.,FRANCO CORRADI & C. S.A.S.,"[""CLASSE B (built to print)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO B
+TIPO DISTRIBUTORE
+Name: 41, dtype: object; TIPO B
+TIPO DISTRIBUTORE
+Name: 41, dtype: object",COMPONENTI ELETTRONICI,nan; QUESTIONARIO PRE-QUALIFICA,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE B (built to print)"", ""row"": 42, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 46, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_7427218699660185323,FUTURA S.R.L.,FUTURA S.R.L.,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO D
+TIPO COSTRUTTORE
+Name: 18, dtype: object; TIPO D
+TIPO COSTRUTTORE
+Name: 18, dtype: object",COMPONENTI ELETTRONICI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 19, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 50, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_8269220135074402975,GALVANICA ITALIA S.R.L.,GALVANICA ITALIA S.R.L.,"[""CLASSE B (built to print)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO B
+TIPO PRODUTTORE
+Name: 22, dtype: object; TIPO B
+TIPO PRODUTTORE
+Name: 22, dtype: object",TRATTAMENTI GALVANICI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE B (built to print)"", ""row"": 23, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 36, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_7963535339513655110,GENERAL COMPUTER,GENERAL COMPUTER,"[""CLASSE E (generali stabilimento"", ""ITEM E SERVIZI INTERNI""]","TIPO E
+TIPO DISTRIBUTORE
+Name: 39, dtype: object; TIPO E
+TIPO DISTRIBUTORE
+Name: 39, dtype: object",PRODOTTI HARDWARE E LICENZE SOFTWARE,nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE E (generali stabilimento"", ""row"": 40, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 14, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_7734822913286839618,GENERON SPA,GENERON SPA,"[""STORICO""]","TIPO NaN
+TIPO COSTRUTTORE
+Name: 15, dtype: object; TIPO NaN
+TIPO COSTRUTTORE
+Name: 15, dtype: object",STRUMENTAZIONI,nan; ISO 9001:2015 - n.CERT-17841-2006-AQ-BOL,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""STORICO"", ""row"": 16, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_401393716419639259,GENEX RF srl,GENEX RF SRL,"[""CLASSE B (built to print)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO B
+TIPO PRODUTTORE
+Name: 27, dtype: object; TIPO B
+TIPO PRODUTTORE
+Name: 27, dtype: object",COMPONENTI ELETTRONICI,nan; ISO 9001:2015 - certificato n. 9170.GEN2,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE B (built to print)"", ""row"": 28, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 44, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_4990335401200773335,GENTILE MULTISERVIZI,GENTILE MULTISERVIZI,"[""CLASSE E (generali stabilimento"", ""ITEM E SERVIZI INTERNI""]","TIPO E
+TIPO SERVIZI
+Name: 22, dtype: object; TIPO E
+TIPO SERVIZI
+Name: 22, dtype: object",PULIZIA AREE VERDI,nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE E (generali stabilimento"", ""row"": 23, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 40, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_7658574357741570425,GESTIONE SILO,GESTIONE SILO,"[""CLASSE A (progettazione)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO A
+TIPO COSTRUTTORE
+Name: 16, dtype: object; TIPO A
+TIPO COSTRUTTORE
+Name: 16, dtype: object",DISPOSITIVI OTTICI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE A (progettazione)"", ""row"": 17, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 95, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_5033084673688544619,GLENAIR ITALIA S.p.A.,GLENAIR ITALIA S.P.A.,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO D
+TIPO PRODUTTORE
+Name: 30, dtype: object; TIPO D
+TIPO PRODUTTORE
+Name: 30, dtype: object",COMPONENTI ELETTRONICI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 31, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 80, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_3815304934010010489,GOAN S.R.L.,GOAN S.R.L.,"[""CLASSE B (built to print)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO B
+TIPO COSTRUTTORE
+Name: 30, dtype: object; TIPO B
+TIPO COSTRUTTORE
+Name: 30, dtype: object",LAVORAZIONI MECCANICHE,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE B (built to print)"", ""row"": 31, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 65, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_4259326210876808316,HOFFMANN,HOFFMANN,"[""CLASSE E (generali stabilimento"", ""ITEM E SERVIZI INTERNI""]","TIPO E
+TIPO DISTRIBUTORE
+Name: 38, dtype: object; TIPO E
+TIPO DISTRIBUTORE
+Name: 38, dtype: object",UTENSILERIA E PRODOTTI PER OFFICINA,nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE E (generali stabilimento"", ""row"": 39, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 31, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_3233627929513749434,HSC,HSC,"[""CLASSE E (generali stabilimento"", ""ITEM E SERVIZI INTERNI""]","TIPO E
+TIPO DISTRIBUTORE
+Name: 15, dtype: object; TIPO E
+TIPO DISTRIBUTORE
+Name: 15, dtype: object",PRODOTTI VARI PER AZIENDE (PULIZIA / IMBALLAGGIO / ANTINFORTUNISTICA),nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE E (generali stabilimento"", ""row"": 16, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 13, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_569438434151077473,IPP,IPP,"[""STORICO""]","TIPO NaN
+TIPO DISTRIBUTORI
+Name: 17, dtype: object; TIPO NaN
+TIPO DISTRIBUTORI
+Name: 17, dtype: object",Forniture Industriali per Elettronica,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""STORICO"", ""row"": 18, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_5436380734011910011,J2 SOURCING AB,J2 SOURCING AB,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO D
+TIPO DISTRIBUTORE
+Name: 21, dtype: object; TIPO D
+TIPO DISTRIBUTORE
+Name: 21, dtype: object",COMPONENTI ELETTRONICI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 22, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 60, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_598547937965636699,LA NUOVA EUROGALV S.R.L.,LA NUOVA EUROGALV S.R.L.,"[""CLASSE B (built to print)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO B
+TIPO PRODUTTORE
+Name: 21, dtype: object; TIPO B
+TIPO PRODUTTORE
+Name: 21, dtype: object",TRATTAMENTI GALVANICI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE B (built to print)"", ""row"": 22, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 35, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_5171594928180473881,LAMECO,LAMECO,"[""CLASSE B (built to print)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO B
+TIPO COSTRUTTORE
+Name: 37, dtype: object; TIPO B
+TIPO COSTRUTTORE
+Name: 37, dtype: object",LAVORAZIONI MECCANICHE,nan; ISO 9001:2015 / EN 9100:2018,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE B (built to print)"", ""row"": 38, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 77, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_8547799447660535427,LASER OPTRONIC,LASER OPTRONIC,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI INTERNI""]","TIPO D
+TIPO DISTRIBUTORE
+Name: 46, dtype: object; TIPO D
+TIPO DISTRIBUTORE
+Name: 46, dtype: object",ATTREZZATURE OTTICHE,nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 47, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 43, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_4919760054865203092,LIBER S.R.L.,LIBER S.R.L.,"[""CLASSE E (generali stabilimento"", ""ITEM E SERVIZI INTERNI""]","TIPO E
+TIPO PRODUTTORE
+Name: 9, dtype: object; TIPO E
+TIPO PRODUTTORE
+Name: 9, dtype: object",PRODOTTI PER PULIZIA,nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE E (generali stabilimento"", ""row"": 10, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 12, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_7308963895195308327,LINCAR CARRELLI ELEVATORI S.R.L.,LINCAR CARRELLI ELEVATORI S.R.L.,"[""CLASSE E (generali stabilimento"", ""ITEM E SERVIZI INTERNI""]","TIPO E
+TIPO ASSISTENZA TECNICA
+Name: 25, dtype: object; TIPO E
+TIPO ASSISTENZA TECNICA
+Name: 25, dtype: object",VENDITA E MANUTENZIONE CARRELLI ELEVATORI,nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE E (generali stabilimento"", ""row"": 26, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 20, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_1622588361885704494,LUMITRON,LUMITRON,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO D
+TIPO COSTRUTTORE 
+Name: 14, dtype: object; TIPO D
+TIPO COSTRUTTORE 
+Name: 14, dtype: object",LED,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 15, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 30, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_5492491103023444471,MAGI srl,MAGI SRL,"[""CLASSE C (coats)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO C
+TIPO DISTRIBUTORE
+Name: 11, dtype: object; TIPO C
+TIPO DISTRIBUTORE
+Name: 11, dtype: object",COMPONENTI MECCANICI DI PRECISIONE,nan; ISO 9001:2015 - certificato n. 1280,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE C (coats)"", ""row"": 12, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 19, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_1172708439351808017,MARGARINI IMBALLI S.r.l.,MARGARINI IMBALLI S.R.L.,"[""CLASSE E (generali stabilimento"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO E
+TIPO COSTRUTTORE
+Name: 35, dtype: object; TIPO E
+TIPO COSTRUTTORE
+Name: 35, dtype: object",IMBALLI A DISEGNO,nan; inviato QUESTIONARIO PREQUALIFICA,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE E (generali stabilimento"", ""row"": 36, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 89, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_6897579983344076312,MASSARO,MASSARO,"[""CLASSE E (generali stabilimento"", ""ITEM E SERVIZI INTERNI""]","TIPO E
+TIPO LIBERO PROFESSIONISTA
+Name: 20, dtype: object; TIPO E
+TIPO LIBERO PROFESSIONISTA
+Name: 20, dtype: object",ASSISTENZA CALDAIE,nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE E (generali stabilimento"", ""row"": 21, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 32, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_2096134382388706750,MATTIOCCO ELASTOMERI S.R.L.,MATTIOCCO ELASTOMERI S.R.L.,"[""CLASSE B (built to print)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO B
+TIPO COSTRUTTORE
+Name: 32, dtype: object; TIPO B
+TIPO COSTRUTTORE
+Name: 32, dtype: object",MATERIALI PLASTICI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE B (built to print)"", ""row"": 33, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 67, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_6929631107693944623,MAZAK,MAZAK,"[""CLASSE E (generali stabilimento"", ""ITEM E SERVIZI INTERNI""]","TIPO E
+TIPO ASSISTENZA TECNICA
+Name: 31, dtype: object; TIPO E
+TIPO ASSISTENZA TECNICA
+Name: 31, dtype: object",VENDITA E MANUTENZIONE MACCHINE UTENSILI,nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE E (generali stabilimento"", ""row"": 32, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 34, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_3736021495883885906,MECCANICA INNOVATIVA S.R.L.,MECCANICA INNOVATIVA S.R.L.,"[""CLASSE B (built to print)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO B
+TIPO COSTRUTTORE
+Name: 23, dtype: object; TIPO B
+TIPO COSTRUTTORE
+Name: 23, dtype: object",LAVORAZIONI MECCANICHE,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE B (built to print)"", ""row"": 24, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 37, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_6265631649259889097,METATRON S.R.L.,METATRON S.R.L.,"[""CLASSE B (built to print)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO B
+TIPO COSTRUTTORE
+Name: 12, dtype: object; TIPO B
+TIPO COSTRUTTORE
+Name: 12, dtype: object",SERIGRAFIA,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE B (built to print)"", ""row"": 13, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 24, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_5251256167710368146,Microchip Technology Ireland Ltd.,MICROCHIP TECHNOLOGY IRELAND LTD.,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO D
+TIPO DISTRIBUTORI
+Name: 37, dtype: object; TIPO D
+TIPO DISTRIBUTORI
+Name: 37, dtype: object",COMPONENTI ELETTRONICI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 38, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 88, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_4238820630265553671,MILEXIA ITALIA S.P.A.,MILEXIA ITALIA S.P.A.,"[""CLASSE C (coats)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO C
+TIPO DISTRIBUTORE
+Name: 7, dtype: object; TIPO C
+TIPO DISTRIBUTORE
+Name: 7, dtype: object",COMPONENTI ELETTRONICI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE C (coats)"", ""row"": 8, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 16, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_1546328211849872547,MISUMI EUROPA GMBH,MISUMI EUROPA GMBH,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO D
+TIPO DISTRIBUTORE
+Name: 15, dtype: object; TIPO D
+TIPO DISTRIBUTORE
+Name: 15, dtype: object",MATERIALI MECCANICI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 16, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 32, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_7557141675148494135,MITEC,MITEC,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI INTERNI""]","TIPO D
+TIPO DISTRIBUTORE
+Name: 48, dtype: object; TIPO D
+TIPO DISTRIBUTORE
+Name: 48, dtype: object",nan,nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 49, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 44, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_2000115397062621629,MITOR SYSTEM S.R.L.,MITOR SYSTEM S.R.L.,"[""CLASSE B (built to print)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO B
+TIPO COSTRUTTORE
+Name: 11, dtype: object; TIPO B
+TIPO COSTRUTTORE
+Name: 11, dtype: object",MATERIALI MECCANICI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE B (built to print)"", ""row"": 12, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 22, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_7530318392518661453,MITUTOYO,MITUTOYO,"[""CLASSE E (generali stabilimento"", ""ITEM E SERVIZI INTERNI""]","TIPO E
+TIPO COSTRUTTORE
+Name: 29, dtype: object; TIPO E
+TIPO COSTRUTTORE
+Name: 29, dtype: object",STRUMENTI DI MISURA,nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE E (generali stabilimento"", ""row"": 30, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 33, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_2321041381472398810,MONDO PLASTICA S.R.L.,MONDO PLASTICA S.R.L.,"[""CLASSE B (built to print)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO B
+TIPO DISTRIBUTORE
+Name: 35, dtype: object; TIPO B
+TIPO DISTRIBUTORE
+Name: 35, dtype: object",MATERIE PLASTICHE,nan; QUESTIONARIO PRE-QUALIFICA in attesa approvazione Spartaco,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE B (built to print)"", ""row"": 36, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 75, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_5692552977052581366,MONDOFFICE,MONDOFFICE,"[""CLASSE E (generali stabilimento"", ""ITEM E SERVIZI INTERNI""]","TIPO E
+TIPO DISTRIBUTORE
+Name: 8, dtype: object; TIPO E
+TIPO DISTRIBUTORE
+Name: 8, dtype: object","CARTOLERIA, MATERIALI PER UFFICI",nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE E (generali stabilimento"", ""row"": 9, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 21, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_7738383116002723127,MOUSER,MOUSER,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO D
+TIPO DISTRIBUTORE
+Name: 7, dtype: object; TIPO D
+TIPO DISTRIBUTORE
+Name: 7, dtype: object",COMPONENTI ELETTRONICI,nan; ISO 9001-2015 / AS9100D,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 8, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 11, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_5419462692056539523,nan,NAN,"[""CLASSE E (generali stabilimento"", ""ITEM E SERVIZI INTERNI"", ""NON UTILIZZATI (>2 ANNI)""]","TIPO NaN
+TIPO NaN
+Name: 7, dtype: object; TIPO NaN
+TIPO NaN
+Name: 7, dtype: object",nan,nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE E (generali stabilimento"", ""row"": 8, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""NON UTILIZZATI (>2 ANNI)"", ""row"": 8, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 52, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 53, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 54, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 55, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 56, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 57, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 58, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 59, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 60, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 61, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 62, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 63, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 64, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 65, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 66, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 67, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 68, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 69, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 70, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 71, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 72, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 73, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 74, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 75, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 76, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 77, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 78, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 79, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 80, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 81, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 82, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 83, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 84, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 85, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 86, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 87, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 88, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 89, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 90, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 91, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 92, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 93, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 94, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_7625501506033571354,NEXOS,NEXOS,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO D
+TIPO DISTRIBUTORE
+Name: 25, dtype: object; TIPO D
+TIPO DISTRIBUTORE
+Name: 25, dtype: object",COMPONENTI ELETTRONICI,nan; QUESTIONARIO PRE-QUALIFICA in attesa approvazione Spartaco,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 26, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 70, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_7554033996431772850,NEXT04,NEXT04,"[""CLASSE E (generali stabilimento"", ""ITEM E SERVIZI INTERNI""]","TIPO E
+TIPO SERVIZI
+Name: 30, dtype: object; TIPO E
+TIPO SERVIZI
+Name: 30, dtype: object",SERVIZI INFORMATICI,nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE E (generali stabilimento"", ""row"": 31, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 35, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_9175789625749234968,NICOMATIC SA,NICOMATIC SA,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO D
+TIPO COSTRUTTORE
+Name: 11, dtype: object; TIPO D
+TIPO COSTRUTTORE
+Name: 11, dtype: object",CONNETTORI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 12, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 15, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_1274520870597683747,NOXANT,NOXANT,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI INTERNI""]","TIPO D
+TIPO DISTRIBUTORE
+Name: 51, dtype: object; TIPO D
+TIPO DISTRIBUTORE
+Name: 51, dtype: object",TELECAMERE INFRAROSSI,nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 52, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 51, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_5981066771242919903,NUOVA ITALACCIAI S.R.L.,NUOVA ITALACCIAI S.R.L.,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO D
+TIPO DISTRIBUTORE
+Name: 20, dtype: object; TIPO D
+TIPO DISTRIBUTORE
+Name: 20, dtype: object",MATERIE PRIME,nan; QUESTIONARIO PRE-QUALIFICA,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 21, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 56, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_181886986307077191,OFFICINE LAMERA S.R.L.,OFFICINE LAMERA S.R.L.,"[""CLASSE B (built to print)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO B
+TIPO COSTRUTTORE
+Name: 9, dtype: object; TIPO B
+TIPO COSTRUTTORE
+Name: 9, dtype: object",MATERIALI MECCANICI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE B (built to print)"", ""row"": 10, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 20, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_4155758999735136088,P.F. ELETTRONICA S.N.C.,P.F. ELETTRONICA S.N.C.,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO D
+TIPO BROKER
+Name: 10, dtype: object; TIPO D
+TIPO BROKER
+Name: 10, dtype: object",COMPONENTI ELETTRONICI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 11, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 14, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_2725608521654802801,PACE UTENSILI,PACE UTENSILI,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI INTERNI""]","TIPO D
+TIPO DISTRIBUTORE
+Name: 41, dtype: object; TIPO D
+TIPO DISTRIBUTORE
+Name: 41, dtype: object",UTENSILERIA E PRODOTTI PER OFFICINA,nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 42, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 22, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_692167826975852691,PARIANI S.R.L.,PARIANI S.R.L.,"[""CLASSE A (progettazione)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO A
+TIPO COSTRUTTORE
+Name: 8, dtype: object; TIPO A
+TIPO COSTRUTTORE
+Name: 8, dtype: object",SISTEMI DI ILLUMINAZIONE,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE A (progettazione)"", ""row"": 9, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 41, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_4068972905233336179,PARTELLI,PARTELLI,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI INTERNI""]","TIPO D
+TIPO DISTRIBUTORE
+Name: 45, dtype: object; TIPO D
+TIPO DISTRIBUTORE
+Name: 45, dtype: object",ATTREZZATURE OTTICHE,nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 46, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 42, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_3475706539591368255,PECCHIOLI RESEARCH S.R.L.,PECCHIOLI RESEARCH S.R.L.,"[""CLASSE A (progettazione)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO A
+TIPO COSTRUTTORE
+Name: 17, dtype: object; TIPO A
+TIPO COSTRUTTORE
+Name: 17, dtype: object",COMPONENTI PER SISTEMI OTTICI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE A (progettazione)"", ""row"": 18, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 52, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_3889280966453641693,PLABER,PLABER,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO D
+TIPO COSTRUTTORE
+Name: 35, dtype: object; TIPO D
+TIPO COSTRUTTORE
+Name: 35, dtype: object",nan,nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 36, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 85, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_7684108721254084034,PRAGMA,PRAGMA,"[""CLASSE E (generali stabilimento"", ""ITEM E SERVIZI INTERNI""]","TIPO E
+TIPO SERVIZI
+Name: 17, dtype: object; TIPO E
+TIPO SERVIZI
+Name: 17, dtype: object",SMALTIMENTO RIFIUTI,nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE E (generali stabilimento"", ""row"": 18, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 23, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_8287150687393649143,PRAXIGROUP,PRAXIGROUP,"[""CLASSE E (generali stabilimento"", ""ITEM E SERVIZI INTERNI""]","TIPO E
+TIPO SERVIZI
+Name: 18, dtype: object; TIPO E
+TIPO SERVIZI
+Name: 18, dtype: object",MEDICO COMPETENTE,nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE E (generali stabilimento"", ""row"": 19, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 24, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_7835686855342870195,PROMATEC S.p.A.,PROMATEC S.P.A.,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO D
+TIPO DISTRIBUTORE
+Name: 26, dtype: object; TIPO D
+TIPO DISTRIBUTORE
+Name: 26, dtype: object",COMPONENTI FLUIDODINAMICI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 27, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 72, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_3095469585454098050,PROTO LABS TOOLING GmbH,PROTO LABS TOOLING GMBH,"[""CLASSE B (built to print)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO B
+TIPO COSTRUTTORE
+Name: 26, dtype: object; TIPO B
+TIPO COSTRUTTORE
+Name: 26, dtype: object","STAMPAGGIO, LAVORAZIONI CNC, STAMPA 3D",nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE B (built to print)"", ""row"": 27, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 43, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_1919952987662277336,PROVAL SERVICE S.R.L.,PROVAL SERVICE S.R.L.,"[""CLASSE B (built to print)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO B
+TIPO COSTRUTTORE
+Name: 24, dtype: object; TIPO B
+TIPO COSTRUTTORE
+Name: 24, dtype: object",LAMINE SERIGRAFICHE,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE B (built to print)"", ""row"": 25, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 38, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_5267865876619934833,QUASER,QUASER,"[""CLASSE E (generali stabilimento"", ""ITEM E SERVIZI INTERNI""]","TIPO E
+TIPO DISTRIBUTORE
+Name: 21, dtype: object; TIPO E
+TIPO DISTRIBUTORE
+Name: 21, dtype: object",PRODOTTI ESD / CLEAN ROOM,nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE E (generali stabilimento"", ""row"": 22, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 36, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_1769043097137569824,RACK PERUZZI,RACK PERUZZI,"[""CLASSE A (progettazione)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO A
+TIPO COSTRUTTORE
+Name: 15, dtype: object; TIPO A
+TIPO COSTRUTTORE
+Name: 15, dtype: object",COSTRUZIONE RACK,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE A (progettazione)"", ""row"": 16, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 73, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_860377226032838986,RAVEDATI,RAVEDATI,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI INTERNI""]","TIPO D
+TIPO DISTRIBUTORE
+Name: 43, dtype: object; TIPO D
+TIPO DISTRIBUTORE
+Name: 43, dtype: object",MACCHINARI PER PRODUZIONE,nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 44, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 26, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_149577017567072811,ROTEM INDUSTRIES ISRAEL LTD,ROTEM INDUSTRIES ISRAEL LTD,"[""CLASSE A (progettazione)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO A
+TIPO COSTRUTTORE
+Name: 11, dtype: object; TIPO A
+TIPO COSTRUTTORE
+Name: 11, dtype: object",APPARATI TECNOLOGIE AVANZATE,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE A (progettazione)"", ""row"": 12, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 57, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_5147226766586798730,RS COMPONENTS S.R.L.,RS COMPONENTS S.R.L.,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO D
+TIPO DISTRIBUTORE
+Name: 16, dtype: object; TIPO D
+TIPO DISTRIBUTORE
+Name: 16, dtype: object",COMPONENTI ELETTRONICI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 17, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 39, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_7820226361910347193,SAMTEC,SAMTEC,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO D
+TIPO DISTRIBUTORE
+Name: 40, dtype: object; TIPO D
+TIPO DISTRIBUTORE
+Name: 40, dtype: object",COMPONENTI ELETTRONICI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 41, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 94, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_9054727905333719892,SENRING ELECTRONICS Co. Limited,SENRING ELECTRONICS CO. LIMITED,"[""FORNITORI IN VALUTAZIONE""]","TIPO C
+TIPO COSTRUTTORE
+Name: 7, dtype: object; TIPO C
+TIPO COSTRUTTORE
+Name: 7, dtype: object",COMPONENTI ELETTRONICI,nan; ???,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""FORNITORI IN VALUTAZIONE"", ""row"": 8, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_7136246588437852542,SERVOTECNICA S.P.A.,SERVOTECNICA S.P.A.,"[""CLASSE C (coats)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO C
+TIPO COSTRUTTORE
+Name: 8, dtype: object; TIPO C
+TIPO COSTRUTTORE
+Name: 8, dtype: object",COMPONENTI ELETTRONICI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE C (coats)"", ""row"": 9, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 17, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_2128467629412212970,SGA S.R.L.,SGA S.R.L.,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO D
+TIPO DISTRIBUTORE
+Name: 23, dtype: object; TIPO D
+TIPO DISTRIBUTORE
+Name: 23, dtype: object",COMPONENTI ELETTRONICI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 24, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 62, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_5724658575012767520,SHENZEN JINSHENGDA ELECTRONIC & TECH CO.,SHENZEN JINSHENGDA ELECTRONIC & TECH CO.,"[""CLASSE B (built to print)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO B
+TIPO COSTRUTTORE
+Name: 15, dtype: object; TIPO B
+TIPO COSTRUTTORE
+Name: 15, dtype: object",COSTRUTTORE CIRCUITI STAMPATI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE B (built to print)"", ""row"": 16, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 27, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_7985139557138078456,SOLYNX CORPORATION,SOLYNX CORPORATION,"[""CLASSE C (coats)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO C
+TIPO DISTRIBUTORE
+Name: 9, dtype: object; TIPO C
+TIPO DISTRIBUTORE
+Name: 9, dtype: object",COMPONENTI ELETTRONICI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE C (coats)"", ""row"": 10, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 42, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_3964537242048028404,SPECTROGON AB,SPECTROGON AB,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO D
+TIPO COSTRUTTORE
+Name: 31, dtype: object; TIPO D
+TIPO COSTRUTTORE
+Name: 31, dtype: object",COMPONENTI OTTICI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 32, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 81, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_7671884539361949218,"SUNKING CIRCUITS ELECTRONICS CO., LTD.","SUNKING CIRCUITS ELECTRONICS CO., LTD.","[""CLASSE B (built to print)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO B
+TIPO COSTRUTTORE
+Name: 29, dtype: object; TIPO B
+TIPO COSTRUTTORE
+Name: 29, dtype: object",CIRCUITI STAMPATI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE B (built to print)"", ""row"": 30, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 63, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_3738838332918926724,TECHNOLOGY NUCLEAR ELECTRONICS SRL,TECHNOLOGY NUCLEAR ELECTRONICS SRL,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO D
+TIPO DISTRIBUTORE
+Name: 34, dtype: object; TIPO D
+TIPO DISTRIBUTORE
+Name: 34, dtype: object",COMPONENTI ELETTRONICI,nan; ISO 9001:2015 - certificato n. 9115.TNE1,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 35, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 84, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_370981806065138102,TECNO 77,TECNO 77,"[""STORICO""]","TIPO NaN
+TIPO COSTRUTTORE
+Name: 12, dtype: object; TIPO NaN
+TIPO COSTRUTTORE
+Name: 12, dtype: object","Master per circuiti stampati
+Assemblaggio schede",nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""STORICO"", ""row"": 13, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_6971707677530644434,TECNO GENERAL,TECNO GENERAL,"[""CLASSE D (distributori)"", ""CLASSE E (generali stabilimento"", ""ITEM E SERVIZI INTERNI""]","TIPO D
+TIPO SERVIZI
+Name: 44, dtype: object; TIPO D
+TIPO SERVIZI
+Name: 44, dtype: object","TELEFONIA, INTERNET",nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 45, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""CLASSE E (generali stabilimento"", ""row"": 20, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 27, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_2587519935137978070,TECNOCLIMA S.R.L.,TECNOCLIMA S.R.L.,"[""CLASSE E (generali stabilimento"", ""ITEM E SERVIZI INTERNI""]","TIPO E
+TIPO ASSISTENZA TECNICA
+Name: 14, dtype: object; TIPO E
+TIPO ASSISTENZA TECNICA
+Name: 14, dtype: object",MANUTENZIONE IMPIANTI,nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE E (generali stabilimento"", ""row"": 15, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 11, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_6407544227265236460,TECNOMEC S.R.L.,TECNOMEC S.R.L.,"[""CLASSE B (built to print)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO B
+TIPO COSTRUTTORE
+Name: 33, dtype: object; TIPO B
+TIPO COSTRUTTORE
+Name: 33, dtype: object",CIRCUITI STAMPATI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE B (built to print)"", ""row"": 34, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 68, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_2143113943275349909,TECNOMILL S.R.L.,TECNOMILL S.R.L.,"[""CLASSE B (built to print)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO B
+TIPO COSTRUTTORE
+Name: 10, dtype: object; TIPO B
+TIPO COSTRUTTORE
+Name: 10, dtype: object",MATERIALI MECCANICI,nan; ISO 9001:2015 / EN 9100:2018,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE B (built to print)"", ""row"": 11, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 21, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_3831100867957904877,TECNOTTICA CONSONNI S.R.L.,TECNOTTICA CONSONNI S.R.L.,"[""CLASSE A (progettazione)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO A
+TIPO COSTRUTTORE
+Name: 9, dtype: object; TIPO A
+TIPO COSTRUTTORE
+Name: 9, dtype: object",COMPONENTI PER SISTEMI OTTICI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE A (progettazione)"", ""row"": 10, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 51, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_2765943585002483821,TEKCELEO,TEKCELEO,"[""STORICO""]","TIPO NaN
+TIPO COSTRUTTORE
+Name: 16, dtype: object; TIPO NaN
+TIPO COSTRUTTORE
+Name: 16, dtype: object",STRUMENTAZIONI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""STORICO"", ""row"": 17, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_3536730906940634694,TESLAB S.R.L.,TESLAB S.R.L.,"[""CLASSE A (progettazione)"", ""ITEM E SERVIZI INTERNI""]","TIPO A
+TIPO NaN
+Name: 18, dtype: object; TIPO A
+TIPO NaN
+Name: 18, dtype: object",LABORATORIO TEST,nan; nan,nan,ISO 9001:2015,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE A (progettazione)"", ""row"": 19, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 50, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}
+SUP_2456672916956456791,TRANS-PART SRL,TRANS-PART SRL,"[""STORICO""]","TIPO NaN
+TIPO BROKER
+Name: 9, dtype: object; TIPO NaN
+TIPO BROKER
+Name: 9, dtype: object",COMPONENTI ELETTRONICI,nan; EN 9120-2018 / ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""STORICO"", ""row"": 10, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_7279399796261215696,TRATTAMENTI GALVANICI INDUSTRIALI S.R.L.,TRATTAMENTI GALVANICI INDUSTRIALI S.R.L.,"[""CLASSE B (built to print)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO B
+TIPO PRODUTTORE
+Name: 28, dtype: object; TIPO B
+TIPO PRODUTTORE
+Name: 28, dtype: object",TRATTAMENTI GALVANICI,nan; ISO 9001:2015 / EN 9100:2018,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE B (built to print)"", ""row"": 29, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 55, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_9041471132856426669,TS2 ENGINEERING,TS2 ENGINEERING,"[""CLASSE A (progettazione)""]","TIPO A
+TIPO NaN
+Name: 19, dtype: object; TIPO A
+TIPO NaN
+Name: 19, dtype: object",PROGETTAZIONE,nan; nan,nan,ISO 9001:2015,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE A (progettazione)"", ""row"": 20, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_5404335453257618150,TTI ITALY Srl,TTI ITALY SRL,"[""STORICO""]","TIPO NaN
+TIPO DISTRIBUTORE
+Name: 8, dtype: object; TIPO NaN
+TIPO DISTRIBUTORE
+Name: 8, dtype: object",COMPONENTI ELETTRONICI,nan; ISO 9001:2015 / EN 9100:2018,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""STORICO"", ""row"": 9, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_1974149026307225299,VIGO PHOTONICS S.A.,VIGO PHOTONICS S.A.,"[""CLASSE D (distributori)"", ""ITEM E SERVIZI AL CLIENTE""]","TIPO D
+TIPO COSTRUTTORE
+Name: 27, dtype: object; TIPO D
+TIPO COSTRUTTORE
+Name: 27, dtype: object",COMPONENTI ELETTRONICI,nan; ISO 9001:2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE D (distributori)"", ""row"": 28, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI AL CLIENTE"", ""row"": 74, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_3775674703962406673,W.L. GORE & ASSOCIATES (UK) LTD,W.L. GORE & ASSOCIATES (UK) LTD,"[""STORICO""]","TIPO NaN
+TIPO FORNITORE A CATALOGO
+Name: 7, dtype: object; TIPO NaN
+TIPO FORNITORE A CATALOGO
+Name: 7, dtype: object","PROGETTAZIONE, SVILUPPO E PRODUZIONE DI GUARNIZIONI E CAVI",nan; AS9100D / ISO 9001_2015,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""STORICO"", ""row"": 8, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}]",{}
+SUP_1277636026167821270,WETEC,WETEC,"[""CLASSE E (generali stabilimento"", ""ITEM E SERVIZI INTERNI""]","TIPO E
+TIPO DISTRIBUTORE
+Name: 42, dtype: object; TIPO E
+TIPO DISTRIBUTORE
+Name: 42, dtype: object",nan,nan; nan,nan,nan,nan,nan,C:\Users\riccardo.dibiagio\PycharmProjects\etl_tool\Registro fornitori e Ordini.xlsx,"[{""sheet"": ""CLASSE E (generali stabilimento"", ""row"": 43, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO"", ""TIPO""]}, {""sheet"": ""ITEM E SERVIZI INTERNI"", ""row"": 47, ""cols_used"": [""AMBITO DI FORNITURA"", ""CERTIFICAZIONE"", ""CERTIFICAZIONI"", ""DISTRIBUTORE UFFICIALE O BROKER"", ""KPI\nQUALITA'"", ""KPI\nTEMPI"", ""NOTE"", ""RAGIONE SOCIALE"", ""TIPO""]}]",{}

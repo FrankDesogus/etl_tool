@@ -1,0 +1,22 @@
+{
+  "source_file": "Registro fornitori e Ordini.xlsx",
+  "run_started_at": "2026-03-03T15:27:17+01:00",
+  "run_finished_at": "2026-03-03T15:27:17+01:00",
+  "thresholds": {
+    "low": 80,
+    "high": 92
+  },
+  "counts": {
+    "sheets_total": 12,
+    "orders_rows_read": 1414,
+    "orders_rows_clean": 1414,
+    "suppliers_rows_read": 327,
+    "suppliers_rows_clean": 148,
+    "suppliers_dedup_merged": 179,
+    "certifications_rows": 296,
+    "normalization_ops": 3424,
+    "match_warnings": 285,
+    "unmatched_orders": 1122,
+    "unmatched_suppliers": 0
+  }
+}

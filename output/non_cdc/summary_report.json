@@ -1,0 +1,11 @@
+{
+  "source_file": "Registro fornitori e Ordini.xlsx",
+  "scope": "orders where JOB/CDC does NOT start with CDC",
+  "run_finished_at": "2026-03-03T15:27:17+01:00",
+  "counts": {
+    "orders_rows_clean": 995,
+    "match_warnings": 252,
+    "unmatched_orders": 815,
+    "normalization_ops_orders": 1990
+  }
+}
