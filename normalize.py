@@ -25,6 +25,8 @@ BUSINESS_STOPWORDS = LEGAL_NOISE_TOKENS | {
 def normalize_text(x: Any) -> str:
     if x is None:
         return ""
+    if pd.isna(x):
+        return ""
     if not isinstance(x, str):
         x = str(x)
     for k, v in INVISIBLE.items():
