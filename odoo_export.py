@@ -1,5 +1,6 @@
 import os
 import re
+import hashlib
 from typing import Any, Dict, List, Tuple
 
 import pandas as pd
@@ -105,6 +106,33 @@ def _split_certification_tokens(cert_cell_raw: Any, cert_name_raw: Any) -> List[
     return cleaned_tokens
 
 
+def _extract_expiry_dates(expiry_date_raw: Any, expiry_date_fallback: Any) -> Tuple[List[str], str]:
+    raw = _empty_if_na(expiry_date_raw)
+    fallback = _empty_if_na(expiry_date_fallback)
+
+    source = raw or fallback
+    if not source:
+        return [], "missing"
+
+    source = source.replace("\r", "\n")
+    date_like = re.findall(r"\d{1,4}[./-]\d{1,2}[./-]\d{2,4}", source)
+    candidates = date_like if date_like else [source]
+
+    parsed: List[str] = []
+    for token in candidates:
+        dt = pd.to_datetime(token.strip(), errors="coerce", dayfirst=True)
+        if pd.isna(dt):
+            return [], "unparseable"
+        parsed.append(dt.strftime(DATE_FMT))
+
+    return parsed, "ok"
+
+
+def _build_cert_external_uid(supplier_uid: str, idx: int, token: str, expiry: str) -> str:
+    fingerprint = hashlib.sha1(f"{token}|{expiry}".encode("utf-8")).hexdigest()[:12].upper()
+    return f"CERT::{_sanitize_token(supplier_uid)}::{idx}::{fingerprint}"
+
+
 def _extract_multi_cert_info(cert_cell_raw: Any, cert_name_raw: Any) -> Tuple[str, str]:
     tokens = _split_certification_tokens(cert_cell_raw, cert_name_raw)
     if not tokens:
@@ -198,10 +226,16 @@ def build_certificazioni_import(
     required = [
         "certification_id",
         "supplier_id",
+        "supplier_name_normalized",
         "cert_cell_raw",
         "cert_name_raw",
         "cert_name_normalized",
+        "expiry_date_raw",
         "expiry_date",
+        "source_file",
+        "source_sheet",
+        "source_row",
+        "source_column",
     ]
     certs = _ensure_columns(df_certs, required, warnings, "certifications")
     mapping = _ensure_columns(
@@ -229,53 +263,123 @@ def build_certificazioni_import(
             }
         )
 
-    certs["expiry_date_fmt"] = _format_date_series(certs["expiry_date"])
-    missing_expiry = certs[certs["expiry_date_fmt"] == ""].copy()
+    export_rows: List[Dict[str, str]] = []
+    missing_expiry_rows: List[Dict[str, str]] = []
 
-    valid = certs[
-        (certs["expiry_date_fmt"] != "")
-        & (certs["supplier_external_uid"].fillna("").astype(str).str.strip() != "")
-    ].copy()
-    multi_info = valid.apply(
-        lambda row: _extract_multi_cert_info(row.get("cert_cell_raw", ""), row.get("cert_name_raw", "")),
-        axis=1,
-    )
-    valid["tipi_certificazione_multi"] = multi_info.apply(lambda value: value[0])
-    valid["certificazioni_altro_dettaglio"] = multi_info.apply(lambda value: value[1])
-    valid["tipo_certificazione"] = valid["tipi_certificazione_multi"].apply(_select_single_cert_type)
+    for _, row in certs.iterrows():
+        supplier_uid = _empty_if_na(row.get("supplier_external_uid", ""))
+        if not supplier_uid:
+            continue
 
-    cert_id = valid["certification_id"].apply(_empty_if_na)
-    generated = (
-        "CERT::"
-        + valid["supplier_external_uid"].apply(_sanitize_token)
-        + "::"
-        + valid["cert_name_normalized"].apply(_sanitize_token)
-        + "::"
-        + valid["expiry_date_fmt"].apply(_sanitize_token)
-    )
+        cert_tokens = _split_certification_tokens(row.get("cert_cell_raw", ""), row.get("cert_name_raw", ""))
+        if not cert_tokens:
+            cert_tokens = [_empty_if_na(row.get("cert_name_raw", "")) or _empty_if_na(row.get("cert_name_normalized", ""))]
+        cert_tokens = [tok for tok in cert_tokens if _empty_if_na(tok)]
+        if not cert_tokens:
+            continue
 
-    out = pd.DataFrame()
-    out["external_uid"] = cert_id.where(cert_id != "", generated)
-    out["fornitore_external_uid"] = valid["supplier_external_uid"].apply(_empty_if_na)
-    out["tipo_certificazione"] = valid["tipo_certificazione"]
-    out["tipi_certificazione_multi"] = valid["tipi_certificazione_multi"]
-    out["certificazioni_altro_dettaglio"] = valid["certificazioni_altro_dettaglio"]
-    out["data_scadenza"] = valid["expiry_date_fmt"]
-    out["nome_certificazione_altro"] = ""
-    out.loc[
-        out["tipo_certificazione"] == "ALTRO",
-        "nome_certificazione_altro",
-    ] = valid["cert_name_raw"].apply(_empty_if_na).where(
-        valid["cert_name_raw"].apply(_empty_if_na) != "",
-        valid["cert_name_normalized"].apply(_empty_if_na),
-    )
-    out["codice_certificazione"] = ""
-    out["ultimo_sync"] = _format_datetime_value(run_ts)
+        expiry_dates, expiry_state = _extract_expiry_dates(row.get("expiry_date_raw", ""), row.get("expiry_date", ""))
+        if expiry_state != "ok":
+            missing_expiry_rows.append(
+                {
+                    "certification_id": _empty_if_na(row.get("certification_id", "")),
+                    "supplier_id": _empty_if_na(row.get("supplier_id", "")),
+                    "supplier_external_uid": supplier_uid,
+                    "supplier_name_normalized": _empty_if_na(row.get("supplier_name_normalized", "")),
+                    "cert_cell_raw": _empty_if_na(row.get("cert_cell_raw", "")),
+                    "cert_name_raw": _empty_if_na(row.get("cert_name_raw", "")),
+                    "expiry_date_raw": _empty_if_na(row.get("expiry_date_raw", "")),
+                    "expiry_date": _empty_if_na(row.get("expiry_date", "")),
+                    "diagnostic": f"expiry_{expiry_state}",
+                    "source_file": _empty_if_na(row.get("source_file", "")),
+                    "source_sheet": _empty_if_na(row.get("source_sheet", "")),
+                    "source_row": _empty_if_na(row.get("source_row", "")),
+                    "source_column": _empty_if_na(row.get("source_column", "")),
+                }
+            )
+            warnings.append(
+                {
+                    "dataset": "certifications",
+                    "warning_type": "expiry_unparseable",
+                    "supplier_id": _empty_if_na(row.get("supplier_id", "")),
+                    "supplier_external_uid": supplier_uid,
+                    "cert_cell_raw": _empty_if_na(row.get("cert_cell_raw", "")),
+                    "expiry_date_raw": _empty_if_na(row.get("expiry_date_raw", "")),
+                    "source_file": _empty_if_na(row.get("source_file", "")),
+                    "source_sheet": _empty_if_na(row.get("source_sheet", "")),
+                    "source_row": _empty_if_na(row.get("source_row", "")),
+                }
+            )
+            continue
 
+        aligned_dates: List[str]
+        if len(expiry_dates) == len(cert_tokens):
+            aligned_dates = expiry_dates
+        elif len(expiry_dates) == 1:
+            aligned_dates = expiry_dates * len(cert_tokens)
+        else:
+            aligned_dates = []
+            for idx in range(len(cert_tokens)):
+                if idx < len(expiry_dates):
+                    aligned_dates.append(expiry_dates[idx])
+                else:
+                    aligned_dates.append(expiry_dates[-1])
+            warnings.append(
+                {
+                    "dataset": "certifications",
+                    "warning_type": "expiry_dates_count_mismatch",
+                    "supplier_id": _empty_if_na(row.get("supplier_id", "")),
+                    "supplier_external_uid": supplier_uid,
+                    "tokens_count": str(len(cert_tokens)),
+                    "dates_count": str(len(expiry_dates)),
+                    "resolution": "reuse_last_date",
+                    "cert_cell_raw": _empty_if_na(row.get("cert_cell_raw", "")),
+                    "expiry_date_raw": _empty_if_na(row.get("expiry_date_raw", "")),
+                    "source_file": _empty_if_na(row.get("source_file", "")),
+                    "source_sheet": _empty_if_na(row.get("source_sheet", "")),
+                    "source_row": _empty_if_na(row.get("source_row", "")),
+                }
+            )
+
+        base_cert_id = _empty_if_na(row.get("certification_id", ""))
+        for idx, token in enumerate(cert_tokens):
+            token_clean = _empty_if_na(token)
+            expiry_fmt = aligned_dates[idx]
+            cert_type = map_certificazione_tipo(token_clean)
+            if base_cert_id and len(cert_tokens) == 1:
+                external_uid = base_cert_id
+            else:
+                external_uid = _build_cert_external_uid(supplier_uid, idx + 1, token_clean, expiry_fmt)
+
+            export_rows.append(
+                {
+                    "external_uid": external_uid,
+                    "fornitore_external_uid": supplier_uid,
+                    "tipo_certificazione": cert_type,
+                    "certificazioni_altro_dettaglio": token_clean if cert_type == "ALTRO" else "",
+                    "data_scadenza": expiry_fmt,
+                    "codice_certificazione": "",
+                    "ultimo_sync": _format_datetime_value(run_ts),
+                }
+            )
+
+    out = pd.DataFrame(export_rows)
+    if out.empty:
+        out = pd.DataFrame(
+            columns=[
+                "external_uid",
+                "fornitore_external_uid",
+                "tipo_certificazione",
+                "certificazioni_altro_dettaglio",
+                "data_scadenza",
+                "codice_certificazione",
+                "ultimo_sync",
+            ]
+        )
     out = out[(out["external_uid"] != "") & (out["fornitore_external_uid"] != "")].copy()
     out = out.drop_duplicates(subset=["external_uid"], keep="first")
 
-    missing_expiry_out = missing_expiry.copy()
+    missing_expiry_out = pd.DataFrame(missing_expiry_rows)
     return out, missing_expiry_out
 
 
