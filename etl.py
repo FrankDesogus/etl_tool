@@ -109,6 +109,35 @@ def _write_non_cdc_pack(
         json.dump(summary_non_cdc, f, ensure_ascii=False, indent=2)
 
 
+
+def _check_certifications_referential_integrity(
+    *,
+    df_sup_dedup: pd.DataFrame,
+    df_certs: pd.DataFrame,
+    out_dir: str,
+) -> set[str]:
+    supplier_ids = set(df_sup_dedup.get("supplier_id", pd.Series(dtype=str)).fillna("").astype(str).str.strip())
+    cert_supplier_ids = set(df_certs.get("supplier_id", pd.Series(dtype=str)).fillna("").astype(str).str.strip())
+
+    supplier_ids.discard("")
+    cert_supplier_ids.discard("")
+
+    orphan_ids = cert_supplier_ids - supplier_ids
+    if orphan_ids:
+        orphan_df = df_certs[df_certs["supplier_id"].astype(str).isin(orphan_ids)].copy()
+        orphan_df.to_csv(os.path.join(out_dir, "orphan_certifications.csv"), index=False)
+        raise RuntimeError(
+            "Referential integrity error: certifications_clean contains supplier_id values "
+            "not present in suppliers_clean. See output/orphan_certifications.csv for details."
+        )
+
+    orphan_path = os.path.join(out_dir, "orphan_certifications.csv")
+    if os.path.exists(orphan_path):
+        os.remove(orphan_path)
+
+    return orphan_ids
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("input_xlsx")
@@ -201,6 +230,11 @@ def main():
         df_sup_all, match_warnings, low_threshold=thresholds.low
     )
     df_certs, cert_warnings, cert_tokens_dropped_nan_like = split_certifications(df_sup_dedup)
+    orphan_ids = _check_certifications_referential_integrity(
+        df_sup_dedup=df_sup_dedup,
+        df_certs=df_certs,
+        out_dir=out_dir,
+    )
     df_orders_clean = clean_and_match_orders(
         df_orders_raw,
         df_sup_dedup,
@@ -235,6 +269,9 @@ def main():
             "cert_rows_with_expiry_unparseable": int(sum(1 for w in cert_warnings if w.get("warning_type") == "cert_expiry_unparseable")),
             "cert_rows_with_expiry_missing": int(sum(1 for w in cert_warnings if w.get("warning_type") == "cert_expiry_missing")),
             "cert_tokens_dropped_nan_like": int(cert_tokens_dropped_nan_like),
+            "supplier_ids_in_suppliers": int(df_sup_dedup.get("supplier_id", pd.Series(dtype=str)).fillna("").astype(str).str.strip().replace("", pd.NA).dropna().nunique()),
+            "supplier_ids_in_certs": int(df_certs.get("supplier_id", pd.Series(dtype=str)).fillna("").astype(str).str.strip().replace("", pd.NA).dropna().nunique()),
+            "orphan_cert_supplier_ids": int(len(orphan_ids)),
             "normalization_ops": int(len(norm_logs)),
             "match_warnings": int(len(match_warnings)),
             "unmatched_orders": int(len(unmatched_orders)),

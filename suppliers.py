@@ -1,8 +1,15 @@
 import json
+import hashlib
 import pandas as pd
 from typing import Any, Dict, List, Tuple
 from rapidfuzz import fuzz, process
 from normalize import normalize_business_name, normalize_case_policy, normalize_text, add_norm_log
+
+
+# Contract: supplier_id is generated once during supplier dedup and reused across downstream datasets.
+def _stable_supplier_id(supplier_name_normalized: str) -> str:
+    digest = hashlib.sha1(supplier_name_normalized.encode("utf-8")).hexdigest()[:12].upper()
+    return f"SUP_{digest}"
 
 def build_suppliers_clean(df_sup: pd.DataFrame, supplier_category: str,
                           norm_logs: List[Dict[str, Any]]) -> Tuple[pd.DataFrame, pd.DataFrame]:
@@ -93,7 +100,7 @@ def deduplicate_suppliers(df_sup_clean: pd.DataFrame,
         grouped.append(rec)
 
     df_dedup = pd.DataFrame(grouped)
-    df_dedup["supplier_id"] = df_dedup["supplier_name_normalized"].apply(lambda x: f"SUP_{abs(hash(x))}")
+    df_dedup["supplier_id"] = df_dedup["supplier_name_normalized"].apply(_stable_supplier_id)
 
     # possible duplicates warning (no merge)
     names = df_dedup["supplier_name_normalized"].tolist()
