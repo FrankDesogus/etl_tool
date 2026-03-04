@@ -200,7 +200,7 @@ def main():
     df_sup_dedup = deduplicate_suppliers(
         df_sup_all, match_warnings, low_threshold=thresholds.low
     )
-    df_certs, cert_warnings = split_certifications(df_sup_dedup)
+    df_certs, cert_warnings, cert_tokens_dropped_nan_like = split_certifications(df_sup_dedup)
     df_orders_clean = clean_and_match_orders(
         df_orders_raw,
         df_sup_dedup,
@@ -234,6 +234,7 @@ def main():
             "cert_rows_with_expiry_parsed": int((df_certs.get("expiry_date", pd.Series(dtype=str)).fillna("").astype(str).str.strip() != "").sum()),
             "cert_rows_with_expiry_unparseable": int(sum(1 for w in cert_warnings if w.get("warning_type") == "cert_expiry_unparseable")),
             "cert_rows_with_expiry_missing": int(sum(1 for w in cert_warnings if w.get("warning_type") == "cert_expiry_missing")),
+            "cert_tokens_dropped_nan_like": int(cert_tokens_dropped_nan_like),
             "normalization_ops": int(len(norm_logs)),
             "match_warnings": int(len(match_warnings)),
             "unmatched_orders": int(len(unmatched_orders)),

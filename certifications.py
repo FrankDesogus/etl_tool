@@ -4,10 +4,13 @@ from typing import Any, Dict, List, Tuple
 from normalize import normalize_text, normalize_case_policy, parse_date_to_iso
 from utils import now_iso
 
+INVALID_CERT_TOKENS = {"", "NAN", "NONE", "NULL", "-", "N/A"}
 
-def split_certifications(df_sup: pd.DataFrame) -> Tuple[pd.DataFrame, List[Dict[str, Any]]]:
+
+def split_certifications(df_sup: pd.DataFrame) -> Tuple[pd.DataFrame, List[Dict[str, Any]], int]:
     cert_rows: List[Dict[str, Any]] = []
     warnings: List[Dict[str, Any]] = []
+    cert_tokens_dropped_nan_like = 0
 
     for _, s in df_sup.iterrows():
         certs_raw = normalize_text(s.get("certifications_raw"))
@@ -24,11 +27,22 @@ def split_certifications(df_sup: pd.DataFrame) -> Tuple[pd.DataFrame, List[Dict[
         if not certs_raw:
             continue
 
-        parts = []
+        raw_parts = []
         for chunk in certs_raw.replace("\n", ";").split(";"):
             chunk = chunk.strip()
             if chunk:
-                parts.extend([c.strip() for c in chunk.split(",") if c.strip()])
+                raw_parts.extend([c.strip() for c in chunk.split(",")])
+
+        parts = []
+        for p in raw_parts:
+            p_norm = normalize_case_policy(p)
+            if p_norm in INVALID_CERT_TOKENS:
+                cert_tokens_dropped_nan_like += 1
+                continue
+            parts.append(p)
+
+        if not parts:
+            continue
 
         if expiry_raw and not expiry_iso:
             warnings.append({
@@ -72,4 +86,4 @@ def split_certifications(df_sup: pd.DataFrame) -> Tuple[pd.DataFrame, List[Dict[
                 "source_column": s.get("cert_expiry_source_column", "CERTIFICAZIONE/CERTIFICAZIONI"),
             })
 
-    return pd.DataFrame(cert_rows), warnings
+    return pd.DataFrame(cert_rows), warnings, cert_tokens_dropped_nan_like
