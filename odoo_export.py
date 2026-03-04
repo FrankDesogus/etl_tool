@@ -97,18 +97,29 @@ def map_order_stato(order_status: Any, warnings: List[Dict[str, str]]) -> str:
 
 
 def build_fornitori_import(df_suppliers: pd.DataFrame, run_ts: str, warnings: List[Dict[str, str]]) -> pd.DataFrame:
-    required = ["supplier_id", "supplier_name_normalized", "supplier_category", "supply_scope", "notes"]
+    required = [
+        "supplier_external_uid",
+        "supplier_name_raw",
+        "registry_supplier_category",
+        "registry_supply_scope",
+        "registry_notes",
+        "matched_registry_supplier_id",
+    ]
     suppliers = _ensure_columns(df_suppliers, required, warnings, "suppliers")
+    unmatched_mask = suppliers["matched_registry_supplier_id"].apply(_empty_if_na) == ""
 
     out = pd.DataFrame()
-    out["external_uid"] = suppliers["supplier_id"].apply(_empty_if_na)
-    out["ragione_sociale"] = suppliers["supplier_name_normalized"].apply(_empty_if_na)
-    out["tipo"] = suppliers["supplier_category"].apply(map_supplier_tipo)
-    out["ambito_fornitura"] = suppliers["supply_scope"].apply(_empty_if_na)
+    out["external_uid"] = suppliers["supplier_external_uid"].apply(_empty_if_na)
+    out["ragione_sociale"] = suppliers["supplier_name_raw"].apply(_empty_if_na)
+    out["tipo"] = suppliers["registry_supplier_category"].apply(map_supplier_tipo)
+    out.loc[unmatched_mask, "tipo"] = "PRODUZIONE"
+    out["ambito_fornitura"] = suppliers["registry_supply_scope"].apply(_empty_if_na)
     out["stato_approvazione"] = ""
+    out.loc[unmatched_mask, "stato_approvazione"] = "IN VALUTAZIONE"
     out["puntualita_consegne_pct"] = ""
     out["kpi_last_update"] = _format_datetime_value(run_ts)
-    out["note"] = suppliers["notes"].apply(_empty_if_na)
+    out["note"] = suppliers["registry_notes"].apply(_empty_if_na)
+    out.loc[unmatched_mask, "note"] = "Creato da ORDINI: non presente in registro fornitori"
     out["ultimo_sync"] = _format_datetime_value(run_ts)
 
     out = out[out["external_uid"] != ""].copy()
@@ -119,6 +130,7 @@ def build_fornitori_import(df_suppliers: pd.DataFrame, run_ts: str, warnings: Li
 
 def build_certificazioni_import(
     df_certs: pd.DataFrame,
+    registry_to_master_mapping: pd.DataFrame,
     run_ts: str,
     warnings: List[Dict[str, str]],
 ) -> Tuple[pd.DataFrame, pd.DataFrame]:
@@ -130,17 +142,44 @@ def build_certificazioni_import(
         "expiry_date",
     ]
     certs = _ensure_columns(df_certs, required, warnings, "certifications")
+    mapping = _ensure_columns(
+        registry_to_master_mapping,
+        ["registry_supplier_id", "supplier_external_uid"],
+        warnings,
+        "registry_to_master_mapping",
+    )
+
+    certs = certs.merge(
+        mapping.drop_duplicates(subset=["registry_supplier_id"], keep="first"),
+        how="left",
+        left_on="supplier_id",
+        right_on="registry_supplier_id",
+    )
+
+    orphan_count = int(certs[certs["supplier_external_uid"].fillna("").astype(str).str.strip() == ""].shape[0])
+    if orphan_count:
+        warnings.append(
+            {
+                "dataset": "certifications",
+                "warning_type": "orphan_registry_cert",
+                "value": str(orphan_count),
+                "fallback": "skipped_from_export",
+            }
+        )
 
     certs["expiry_date_fmt"] = _format_date_series(certs["expiry_date"])
     missing_expiry = certs[certs["expiry_date_fmt"] == ""].copy()
 
-    valid = certs[certs["expiry_date_fmt"] != ""].copy()
+    valid = certs[
+        (certs["expiry_date_fmt"] != "")
+        & (certs["supplier_external_uid"].fillna("").astype(str).str.strip() != "")
+    ].copy()
     valid["tipo_certificazione"] = valid["cert_name_normalized"].apply(map_certificazione_tipo)
 
     cert_id = valid["certification_id"].apply(_empty_if_na)
     generated = (
         "CERT::"
-        + valid["supplier_id"].apply(_sanitize_token)
+        + valid["supplier_external_uid"].apply(_sanitize_token)
         + "::"
         + valid["cert_name_normalized"].apply(_sanitize_token)
         + "::"
@@ -149,7 +188,7 @@ def build_certificazioni_import(
 
     out = pd.DataFrame()
     out["external_uid"] = cert_id.where(cert_id != "", generated)
-    out["fornitore_external_uid"] = valid["supplier_id"].apply(_empty_if_na)
+    out["fornitore_external_uid"] = valid["supplier_external_uid"].apply(_empty_if_na)
     out["tipo_certificazione"] = valid["tipo_certificazione"]
     out["data_scadenza"] = valid["expiry_date_fmt"]
     out["nome_certificazione_altro"] = ""
@@ -179,7 +218,7 @@ def build_ordini_import(
         "order_id",
         "order_number",
         "order_date",
-        "matched_supplier_id",
+        "supplier_external_uid",
         "operator",
         "amount_total",
         "amount_open",
@@ -193,7 +232,7 @@ def build_ordini_import(
     ]
     orders = _ensure_columns(df_orders, required, warnings, "orders")
 
-    matched_mask = orders["matched_supplier_id"].apply(_empty_if_na) != ""
+    matched_mask = orders["supplier_external_uid"].apply(_empty_if_na) != ""
     matched = orders[matched_mask].copy()
     unmatched = orders[~matched_mask].copy()
 
@@ -201,7 +240,7 @@ def build_ordini_import(
     out["external_uid"] = matched["order_id"].apply(_empty_if_na)
     out["numero"] = matched["order_number"].apply(_empty_if_na)
     out["data"] = _format_date_series(matched["order_date"])
-    out["fornitore_external_uid"] = matched["matched_supplier_id"].apply(_empty_if_na)
+    out["fornitore_external_uid"] = matched["supplier_external_uid"].apply(_empty_if_na)
     out["operatore_codice"] = ""
     out["operatore_nome"] = matched["operator"].apply(_empty_if_na)
     out["importo_totale_eur"] = matched["amount_total"].apply(_empty_if_na)
@@ -235,6 +274,7 @@ def write_odoo_outputs(
     suppliers: pd.DataFrame,
     certs: pd.DataFrame,
     orders: pd.DataFrame,
+    registry_to_master_mapping: pd.DataFrame,
     run_ts: str,
 ) -> Dict[str, int]:
     warnings: List[Dict[str, str]] = []
@@ -242,7 +282,12 @@ def write_odoo_outputs(
     os.makedirs(odoo_dir, exist_ok=True)
 
     df_fornitori = build_fornitori_import(suppliers, run_ts, warnings)
-    df_certificazioni, df_cert_missing_expiry = build_certificazioni_import(certs, run_ts, warnings)
+    df_certificazioni, df_cert_missing_expiry = build_certificazioni_import(
+        certs,
+        registry_to_master_mapping,
+        run_ts,
+        warnings,
+    )
     df_ordini, df_ordini_unmatched = build_ordini_import(orders, run_ts, warnings)
 
     df_fornitori.to_csv(os.path.join(odoo_dir, "fornitori_import.csv"), index=False)

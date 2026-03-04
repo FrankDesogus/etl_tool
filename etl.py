@@ -14,6 +14,7 @@ from config import (
 )
 from io_excel import sheet_is_orders, extract_table_with_provenance, canonicalize_columns
 from suppliers import build_suppliers_clean, deduplicate_suppliers
+from suppliers_master import build_suppliers_master
 from certifications import split_certifications
 from orders import clean_and_match_orders
 from report import write_outputs, build_orders_supplier_cert_report
@@ -251,6 +252,32 @@ def main():
         certs=df_certs,
     )
 
+    (
+        df_suppliers_master,
+        df_suppliers_master_unmatched,
+        df_suppliers_registry_not_used,
+        df_registry_to_master_mapping,
+    ) = build_suppliers_master(
+        df_orders_clean=df_orders_clean,
+        df_registry_suppliers=df_sup_dedup,
+        df_certs=df_certs,
+        low=thresholds.low,
+        high=thresholds.high,
+        match_warnings=match_warnings,
+    )
+
+    supplier_uid_by_key = (
+        df_suppliers_master[["supplier_name_key", "supplier_external_uid"]]
+        .drop_duplicates(subset=["supplier_name_key"], keep="first")
+    ) if not df_suppliers_master.empty else pd.DataFrame(columns=["supplier_name_key", "supplier_external_uid"])
+    df_orders_clean = df_orders_clean.merge(
+        supplier_uid_by_key,
+        how="left",
+        left_on="order_supplier_key",
+        right_on="supplier_name_key",
+    ).drop(columns=["supplier_name_key"], errors="ignore")
+    df_orders_clean["supplier_external_uid"] = df_orders_clean["supplier_external_uid"].fillna("")
+
     summary = {
         "source_file": os.path.basename(xlsx_path),
         "run_started_at": now_iso(),
@@ -277,8 +304,20 @@ def main():
             "match_warnings": int(len(match_warnings)),
             "unmatched_orders": int(len(unmatched_orders)),
             "unmatched_suppliers": int(len(df_unmatched_sup)) if not df_unmatched_sup.empty else 0,
+            "suppliers_master_count": int(len(df_suppliers_master)),
+            "suppliers_master_matched_registry_count": int((df_suppliers_master.get("matched_registry_supplier_id", pd.Series(dtype=str)).fillna("").astype(str).str.strip() != "").sum()),
+            "suppliers_master_unmatched_registry_count": int((df_suppliers_master.get("matched_registry_supplier_id", pd.Series(dtype=str)).fillna("").astype(str).str.strip() == "").sum()),
+            "suppliers_master_with_certs_count": int((df_suppliers_master.get("has_certifications", pd.Series(dtype=bool)).fillna(False) == True).sum()),
+            "suppliers_master_without_certs_count": int((df_suppliers_master.get("has_certifications", pd.Series(dtype=bool)).fillna(False) == False).sum()),
         },
     }
+
+    missing_master_for_order_keys = set(df_orders_clean["order_supplier_key"].fillna("").astype(str)) - set(df_suppliers_master["supplier_name_key"].fillna("").astype(str))
+    if missing_master_for_order_keys:
+        raise RuntimeError("Data integrity error: some order_supplier_key values are missing in suppliers_master")
+
+    if (df_orders_clean["supplier_external_uid"].astype(str).str.strip() == "").any():
+        raise RuntimeError("Data integrity error: at least one order does not reference supplier_master.external_uid")
 
     # Main (full) outputs
     write_outputs(
@@ -293,13 +332,18 @@ def main():
         unmatched_suppliers=df_unmatched_sup,
         cert_warnings=cert_warnings,
         summary=summary,
+        suppliers_master=df_suppliers_master,
+        suppliers_registry_not_used_in_orders=df_suppliers_registry_not_used,
+        suppliers_master_unmatched_registry=df_suppliers_master_unmatched,
+        registry_to_master_mapping=df_registry_to_master_mapping,
     )
 
     odoo_counts = write_odoo_outputs(
         out_dir=out_dir,
-        suppliers=df_sup_dedup,
+        suppliers=df_suppliers_master,
         certs=df_certs,
         orders=df_orders_clean,
+        registry_to_master_mapping=df_registry_to_master_mapping,
         run_ts=now_iso(),
     )
     summary["counts"].update(odoo_counts)
@@ -314,9 +358,10 @@ def main():
         df_orders_non_cdc = df_orders_clean[df_orders_clean["job_cdc_is_cdc"] == False].copy()
         odoo_non_cdc_counts = write_odoo_outputs(
             out_dir=os.path.join(out_dir, "non_cdc"),
-            suppliers=df_sup_dedup,
+            suppliers=df_suppliers_master,
             certs=df_certs,
             orders=df_orders_non_cdc,
+            registry_to_master_mapping=df_registry_to_master_mapping,
             run_ts=now_iso(),
         )
         summary["counts"].update(

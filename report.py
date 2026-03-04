@@ -166,15 +166,35 @@ def write_outputs(out_dir: str,
                   unmatched_orders: List[Dict[str, Any]],
                   unmatched_suppliers: pd.DataFrame,
                   cert_warnings: List[Dict[str, Any]],
-                  summary: Dict[str, Any]) -> None:
+                  summary: Dict[str, Any],
+                  suppliers_master: pd.DataFrame | None = None,
+                  suppliers_registry_not_used_in_orders: pd.DataFrame | None = None,
+                  suppliers_master_unmatched_registry: pd.DataFrame | None = None,
+                  registry_to_master_mapping: pd.DataFrame | None = None) -> None:
     os.makedirs(out_dir, exist_ok=True)
 
     suppliers.to_csv(os.path.join(out_dir, "suppliers_clean.csv"), index=False)
+    suppliers.to_csv(os.path.join(out_dir, "suppliers_registry_clean.csv"), index=False)
     certs.to_csv(os.path.join(out_dir, "certifications_clean.csv"), index=False)
     orders.to_csv(os.path.join(out_dir, "orders_clean.csv"), index=False)
     orders_supplier_cert_report.to_csv(
         os.path.join(out_dir, "orders_supplier_cert_report.csv"), index=False
     )
+
+    if suppliers_master is not None:
+        suppliers_master.to_csv(os.path.join(out_dir, "suppliers_master.csv"), index=False)
+    if suppliers_master_unmatched_registry is not None:
+        suppliers_master_unmatched_registry.to_csv(
+            os.path.join(out_dir, "suppliers_master_unmatched_registry.csv"), index=False
+        )
+    if suppliers_registry_not_used_in_orders is not None:
+        suppliers_registry_not_used_in_orders.to_csv(
+            os.path.join(out_dir, "suppliers_registry_not_used_in_orders.csv"), index=False
+        )
+    if registry_to_master_mapping is not None:
+        registry_to_master_mapping.to_csv(
+            os.path.join(out_dir, "registry_to_supplier_master_mapping.csv"), index=False
+        )
 
     pd.DataFrame(norm_logs).to_csv(os.path.join(out_dir, "normalization_log.csv"), index=False)
     pd.DataFrame(match_warnings).to_csv(os.path.join(out_dir, "match_warnings.csv"), index=False)
