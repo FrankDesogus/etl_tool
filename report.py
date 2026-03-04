@@ -165,6 +165,7 @@ def write_outputs(out_dir: str,
                   match_warnings: List[Dict[str, Any]],
                   unmatched_orders: List[Dict[str, Any]],
                   unmatched_suppliers: pd.DataFrame,
+                  cert_warnings: List[Dict[str, Any]],
                   summary: Dict[str, Any]) -> None:
     os.makedirs(out_dir, exist_ok=True)
 
@@ -178,6 +179,7 @@ def write_outputs(out_dir: str,
     pd.DataFrame(norm_logs).to_csv(os.path.join(out_dir, "normalization_log.csv"), index=False)
     pd.DataFrame(match_warnings).to_csv(os.path.join(out_dir, "match_warnings.csv"), index=False)
     pd.DataFrame(unmatched_orders).to_csv(os.path.join(out_dir, "unmatched_orders.csv"), index=False)
+    pd.DataFrame(cert_warnings).to_csv(os.path.join(out_dir, "certification_warnings.csv"), index=False)
 
     if unmatched_suppliers is not None and not unmatched_suppliers.empty:
         unmatched_suppliers.to_csv(os.path.join(out_dir, "unmatched_suppliers.csv"), index=False)

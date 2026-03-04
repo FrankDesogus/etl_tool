@@ -135,6 +135,7 @@ def main():
     unmatched_suppliers_parts = []
     suppliers_parts = []
     orders_parts = []
+    supplier_sheet_diagnostics = []
 
     os.makedirs(out_dir, exist_ok=True)
 
@@ -154,11 +155,26 @@ def main():
             df_can = canonicalize_columns(df_raw, ORDER_CANONICAL_MAP)
             orders_parts.append(df_can)
         else:
-            df_raw, _ = extract_table_with_provenance(
+            df_raw, header_idx = extract_table_with_provenance(
                 xlsx_path, sh, "suppliers", ORDER_HEADER_KEYWORDS, SUPPLIER_HEADER_KEYWORDS
             )
             if df_raw.empty:
                 continue
+            header_norm = [str(c) for c in df_raw.columns if str(c) not in {"source_file", "source_sheet", "source_row"}]
+            mapped = []
+            for c in header_norm:
+                tgt = SUPPLIER_CANONICAL_MAP.get(c)
+                if tgt:
+                    mapped.append(f"{c}->{tgt}")
+            supplier_sheet_diagnostics.append({
+                "source_file": os.path.basename(xlsx_path),
+                "source_sheet": sh,
+                "header_row_index_0_based": header_idx,
+                "header_row_excel_1_based": header_idx + 1,
+                "raw_headers_normalized": json.dumps(header_norm, ensure_ascii=False),
+                "mapped_columns": json.dumps(mapped, ensure_ascii=False),
+                "expiry_field_mapped": any(m.endswith("->cert_expiry_raw") for m in mapped),
+            })
             df_can = canonicalize_columns(df_raw, SUPPLIER_CANONICAL_MAP)
             df_clean, df_bad = build_suppliers_clean(
                 df_can, supplier_category=sh, norm_logs=norm_logs
@@ -184,7 +200,7 @@ def main():
     df_sup_dedup = deduplicate_suppliers(
         df_sup_all, match_warnings, low_threshold=thresholds.low
     )
-    df_certs = split_certifications(df_sup_dedup)
+    df_certs, cert_warnings = split_certifications(df_sup_dedup)
     df_orders_clean = clean_and_match_orders(
         df_orders_raw,
         df_sup_dedup,
@@ -214,6 +230,10 @@ def main():
             "suppliers_rows_clean": int(len(df_sup_dedup)),
             "suppliers_dedup_merged": int(max(0, len(df_sup_all) - len(df_sup_dedup))),
             "certifications_rows": int(len(df_certs)),
+            "suppliers_rows_with_expiry_raw_nonempty": int((df_sup_dedup.get("cert_expiry_raw", pd.Series(dtype=str)).fillna("").astype(str).str.strip() != "").sum()),
+            "cert_rows_with_expiry_parsed": int((df_certs.get("expiry_date", pd.Series(dtype=str)).fillna("").astype(str).str.strip() != "").sum()),
+            "cert_rows_with_expiry_unparseable": int(sum(1 for w in cert_warnings if w.get("warning_type") == "cert_expiry_unparseable")),
+            "cert_rows_with_expiry_missing": int(sum(1 for w in cert_warnings if w.get("warning_type") == "cert_expiry_missing")),
             "normalization_ops": int(len(norm_logs)),
             "match_warnings": int(len(match_warnings)),
             "unmatched_orders": int(len(unmatched_orders)),
@@ -232,7 +252,12 @@ def main():
         match_warnings=match_warnings,
         unmatched_orders=unmatched_orders,
         unmatched_suppliers=df_unmatched_sup,
+        cert_warnings=cert_warnings,
         summary=summary,
+    )
+
+    pd.DataFrame(supplier_sheet_diagnostics).to_csv(
+        os.path.join(out_dir, "supplier_header_diagnostics.csv"), index=False
     )
 
     # Optional split pack: NON-CDC
