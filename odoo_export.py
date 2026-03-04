@@ -82,17 +82,32 @@ def _normalize_cert_for_detection(cert_name: Any) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
-def _extract_multi_cert_types(cert_cell_raw: Any, cert_name_raw: Any) -> str:
+def _split_certification_tokens(cert_cell_raw: Any, cert_name_raw: Any) -> List[str]:
     source = _empty_if_na(cert_cell_raw) or _empty_if_na(cert_name_raw)
     if not source:
-        return "ALTRO"
-    tokens = [tok.strip() for tok in re.split(r"[;,\n/|]+", source) if tok.strip()]
-    if not tokens:
-        tokens = [source]
+        return []
+    tokens = [tok.strip() for tok in re.split(r"[;,\n/]+", source) if tok.strip()]
+    return tokens if tokens else [source]
 
-    detected = {map_certificazione_tipo(token) for token in tokens}
+
+def _extract_multi_cert_info(cert_cell_raw: Any, cert_name_raw: Any) -> Tuple[str, str]:
+    tokens = _split_certification_tokens(cert_cell_raw, cert_name_raw)
+    if not tokens:
+        return "ALTRO", ""
+
+    detected = []
+    altro_tokens = []
+    for token in tokens:
+        cert_type = map_certificazione_tipo(token)
+        if cert_type not in detected:
+            detected.append(cert_type)
+        if cert_type == "ALTRO" and token not in altro_tokens:
+            altro_tokens.append(token)
+
     ordered = [tipo for tipo in ["OPZIONE_1", "OPZIONE_2", "ALTRO"] if tipo in detected]
-    return ",".join(ordered) if ordered else "ALTRO"
+    multi = ",".join(ordered) if ordered else "ALTRO"
+    altro_dettaglio = "; ".join(altro_tokens)
+    return multi, altro_dettaglio
 
 
 def _select_single_cert_type(multi_types: str) -> str:
@@ -206,10 +221,12 @@ def build_certificazioni_import(
         (certs["expiry_date_fmt"] != "")
         & (certs["supplier_external_uid"].fillna("").astype(str).str.strip() != "")
     ].copy()
-    valid["tipi_certificazione_multi"] = valid.apply(
-        lambda row: _extract_multi_cert_types(row.get("cert_cell_raw", ""), row.get("cert_name_raw", "")),
+    multi_info = valid.apply(
+        lambda row: _extract_multi_cert_info(row.get("cert_cell_raw", ""), row.get("cert_name_raw", "")),
         axis=1,
     )
+    valid["tipi_certificazione_multi"] = multi_info.apply(lambda value: value[0])
+    valid["certificazioni_altro_dettaglio"] = multi_info.apply(lambda value: value[1])
     valid["tipo_certificazione"] = valid["tipi_certificazione_multi"].apply(_select_single_cert_type)
 
     cert_id = valid["certification_id"].apply(_empty_if_na)
@@ -227,6 +244,7 @@ def build_certificazioni_import(
     out["fornitore_external_uid"] = valid["supplier_external_uid"].apply(_empty_if_na)
     out["tipo_certificazione"] = valid["tipo_certificazione"]
     out["tipi_certificazione_multi"] = valid["tipi_certificazione_multi"]
+    out["certificazioni_altro_dettaglio"] = valid["certificazioni_altro_dettaglio"]
     out["data_scadenza"] = valid["expiry_date_fmt"]
     out["nome_certificazione_altro"] = ""
     out.loc[
