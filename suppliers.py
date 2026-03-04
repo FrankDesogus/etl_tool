@@ -46,7 +46,8 @@ def build_suppliers_clean(df_sup: pd.DataFrame, supplier_category: str,
                 add_norm_log(norm_logs, entity="supplier", record_id=temp_key,
                              field_name=field, original_value=orig, normalized_value=norm,
                              reason="text_trim_invisible_collapse",
-                             source_file=sf, source_sheet=sh, source_row=sr)
+                             source_file=sf, source_sheet=sh, source_row=sr,
+                             source_column=normalize_text(r.get(f"{field}__source_column")))
             return norm
 
         cleaned.append({
@@ -58,6 +59,8 @@ def build_suppliers_clean(df_sup: pd.DataFrame, supplier_category: str,
             "supplier_type": norm_field("supplier_type"),
             "supply_scope": norm_field("supply_scope"),
             "certifications_raw": norm_field("certifications_raw"),
+            "cert_expiry_raw": norm_field("cert_expiry_raw"),
+            "cert_expiry_source_column": normalize_text(r.get("cert_expiry_raw__source_column")),
             "kpi_quality": norm_field("kpi_quality"),
             "kpi_time": norm_field("kpi_time"),
             "distributor_or_broker": norm_field("distributor_or_broker"),

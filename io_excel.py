@@ -54,6 +54,7 @@ def canonicalize_columns(df: pd.DataFrame, mapping: Dict[str, str]) -> pd.DataFr
     for tgt, src_cols in reverse.items():
         if len(src_cols) == 1:
             out[tgt] = df[src_cols[0]]
+            out[f"{tgt}__source_column"] = src_cols[0]
         else:
             def concat_row(r):
                 parts = []
@@ -63,6 +64,7 @@ def canonicalize_columns(df: pd.DataFrame, mapping: Dict[str, str]) -> pd.DataFr
                         parts.append(str(v).strip())
                 return "; ".join(parts)
             out[tgt] = df.apply(concat_row, axis=1)
+            out[f"{tgt}__source_column"] = "; ".join(src_cols)
 
     used_cols = sorted([c for cols in reverse.values() for c in cols])
     out["source_columns_used"] = json.dumps(used_cols, ensure_ascii=False)
