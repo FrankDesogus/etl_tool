@@ -83,17 +83,32 @@ def _normalize_cert_for_detection(cert_name: Any) -> str:
 
 
 def _split_certification_tokens(cert_cell_raw: Any, cert_name_raw: Any) -> List[str]:
+    if pd.isna(cert_cell_raw):
+        cert_cell_raw = ""
     source = _empty_if_na(cert_cell_raw) or _empty_if_na(cert_name_raw)
     if not source:
         return []
-    tokens = [tok.strip() for tok in re.split(r"[;,\n/]+", source) if tok.strip()]
-    return tokens if tokens else [source]
+    raw_tokens = [tok.strip() for tok in re.split(r"[;,\n/]+", source)]
+    if not raw_tokens:
+        raw_tokens = [source.strip()]
+
+    ignored_tokens = {"", "nan", "none", "null", "-", "n/a"}
+    cleaned_tokens: List[str] = []
+    for token in raw_tokens:
+        if not token:
+            continue
+        normalized = re.sub(r"\s+", " ", token).strip().lower()
+        if normalized in ignored_tokens:
+            continue
+        cleaned_tokens.append(token)
+
+    return cleaned_tokens
 
 
 def _extract_multi_cert_info(cert_cell_raw: Any, cert_name_raw: Any) -> Tuple[str, str]:
     tokens = _split_certification_tokens(cert_cell_raw, cert_name_raw)
     if not tokens:
-        return "ALTRO", ""
+        return "", ""
 
     detected = []
     altro_tokens = []
@@ -105,7 +120,7 @@ def _extract_multi_cert_info(cert_cell_raw: Any, cert_name_raw: Any) -> Tuple[st
             altro_tokens.append(token)
 
     ordered = [tipo for tipo in ["OPZIONE_1", "OPZIONE_2", "ALTRO"] if tipo in detected]
-    multi = ",".join(ordered) if ordered else "ALTRO"
+    multi = ",".join(ordered)
     altro_dettaglio = "; ".join(altro_tokens)
     return multi, altro_dettaglio
 
@@ -115,7 +130,7 @@ def _select_single_cert_type(multi_types: str) -> str:
     for preferred in ["OPZIONE_2", "OPZIONE_1", "ALTRO"]:
         if preferred in multi_types.split(","):
             return preferred
-    return "ALTRO"
+    return ""
 
 
 def map_order_stato(order_status: Any, warnings: List[Dict[str, str]]) -> str:
