@@ -9,6 +9,16 @@ from normalize import business_tokens_for_matching
 from utils import now_iso
 
 
+def _normalize_match_score(value: Any) -> Any:
+    if value is None:
+        return pd.NA
+    text = str(value).strip()
+    if not text:
+        return pd.NA
+    numeric = pd.to_numeric(value, errors="coerce")
+    return pd.NA if pd.isna(numeric) else float(numeric)
+
+
 def _sanitize_uid_token(value: Any) -> str:
     text = "" if value is None else str(value).strip().upper()
     if not text:
@@ -123,6 +133,7 @@ def build_suppliers_master(
         })
 
     master = pd.DataFrame(grouped)
+    master["match_score"] = master["match_score"].apply(_normalize_match_score).astype("Float64")
 
     registry_records = []
     for _, r in registry.iterrows():
@@ -213,7 +224,7 @@ def build_suppliers_master(
 
         master.loc[idx, "matched_registry_supplier_id"] = matched_id
         master.loc[idx, "match_method"] = method
-        master.loc[idx, "match_score"] = score
+        master.loc[idx, "match_score"] = _normalize_match_score(score)
         master.loc[idx, "match_confidence"] = conf
 
     # Bring registry fields under registry_* namespace
