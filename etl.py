@@ -17,6 +17,7 @@ from suppliers import build_suppliers_clean, deduplicate_suppliers
 from certifications import split_certifications
 from orders import clean_and_match_orders
 from report import write_outputs, build_orders_supplier_cert_report
+from odoo_export import write_odoo_outputs
 from utils import now_iso
 
 
@@ -293,6 +294,17 @@ def main():
         cert_warnings=cert_warnings,
         summary=summary,
     )
+
+    odoo_counts = write_odoo_outputs(
+        out_dir=out_dir,
+        suppliers=df_sup_dedup,
+        certs=df_certs,
+        orders=df_orders_clean,
+        run_ts=now_iso(),
+    )
+    summary["counts"].update(odoo_counts)
+    with open(os.path.join(out_dir, "summary_report.json"), "w", encoding="utf-8") as f:
+        json.dump(summary, f, ensure_ascii=False, indent=2)
 
     pd.DataFrame(supplier_sheet_diagnostics).to_csv(
         os.path.join(out_dir, "supplier_header_diagnostics.csv"), index=False
