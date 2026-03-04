@@ -303,6 +303,26 @@ def main():
         run_ts=now_iso(),
     )
     summary["counts"].update(odoo_counts)
+
+    if args.split_non_cdc:
+        if "job_cdc_is_cdc" not in df_orders_clean.columns:
+            raise RuntimeError(
+                "Missing column 'job_cdc_is_cdc' in orders_clean. "
+                "Update orders.clean_and_match_orders() to add CDC classification columns."
+            )
+
+        df_orders_non_cdc = df_orders_clean[df_orders_clean["job_cdc_is_cdc"] == False].copy()
+        odoo_non_cdc_counts = write_odoo_outputs(
+            out_dir=os.path.join(out_dir, "non_cdc"),
+            suppliers=df_sup_dedup,
+            certs=df_certs,
+            orders=df_orders_non_cdc,
+            run_ts=now_iso(),
+        )
+        summary["counts"].update(
+            {f"odoo_non_cdc_{k.removeprefix('odoo_')}": v for k, v in odoo_non_cdc_counts.items()}
+        )
+
     with open(os.path.join(out_dir, "summary_report.json"), "w", encoding="utf-8") as f:
         json.dump(summary, f, ensure_ascii=False, indent=2)
 

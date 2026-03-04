@@ -252,13 +252,6 @@ def write_odoo_outputs(
     df_cert_missing_expiry.to_csv(os.path.join(odoo_dir, "certificazioni_missing_expiry.csv"), index=False)
     pd.DataFrame(warnings).to_csv(os.path.join(odoo_dir, "odoo_export_warnings.csv"), index=False)
 
-    non_cdc_dir = os.path.join(out_dir, "non_cdc")
-    if "job_cdc_is_cdc" in orders.columns:
-        os.makedirs(os.path.join(non_cdc_dir, "odoo"), exist_ok=True)
-        non_cdc_orders = orders[orders["job_cdc_is_cdc"] == False].copy()
-        df_ordini_non_cdc, _ = build_ordini_import(non_cdc_orders, run_ts, warnings=[])
-        df_ordini_non_cdc.to_csv(os.path.join(non_cdc_dir, "odoo", "ordini_import.csv"), index=False)
-
     return {
         "odoo_fornitori_rows": int(len(df_fornitori)),
         "odoo_certificazioni_rows": int(len(df_certificazioni)),
