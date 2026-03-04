@@ -99,6 +99,7 @@ def split_certifications(df_sup: pd.DataFrame) -> Tuple[pd.DataFrame, List[Dict[
                 "certification_id": _make_certification_id(supplier_id, p, idx),
                 "supplier_id": supplier_id,
                 "supplier_name_normalized": s["supplier_name_normalized"],
+                "cert_cell_raw": certs_raw,
                 "cert_name_raw": p,
                 "cert_name_normalized": normalize_case_policy(p),
                 "expiry_date_raw": expiry_raw,

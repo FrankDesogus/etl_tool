@@ -1,4 +1,5 @@
 import os
+import re
 from typing import Any, Dict, List, Tuple
 
 import pandas as pd
@@ -64,11 +65,41 @@ def map_supplier_tipo(supplier_category: Any) -> str:
 
 
 def map_certificazione_tipo(cert_name_normalized: Any) -> str:
-    cert_name = _empty_if_na(cert_name_normalized).upper()
-    if "ISO 9001" in cert_name:
+    cert_name = _normalize_cert_for_detection(cert_name_normalized)
+    if re.search(r"\bISO\s*9001\b", cert_name):
         return "OPZIONE_1"
-    if "ISO 14001" in cert_name:
+    # Regola stretta: OPZIONE_2 deve riconoscere solo EN 9100.
+    if re.search(r"\bEN\s*9100\b", cert_name):
         return "OPZIONE_2"
+    return "ALTRO"
+
+
+def _normalize_cert_for_detection(cert_name: Any) -> str:
+    text = _empty_if_na(cert_name).upper()
+    if not text:
+        return ""
+    text = re.sub(r"[:\-_/]", " ", text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def _extract_multi_cert_types(cert_cell_raw: Any, cert_name_raw: Any) -> str:
+    source = _empty_if_na(cert_cell_raw) or _empty_if_na(cert_name_raw)
+    if not source:
+        return "ALTRO"
+    tokens = [tok.strip() for tok in re.split(r"[;,\n/|]+", source) if tok.strip()]
+    if not tokens:
+        tokens = [source]
+
+    detected = {map_certificazione_tipo(token) for token in tokens}
+    ordered = [tipo for tipo in ["OPZIONE_1", "OPZIONE_2", "ALTRO"] if tipo in detected]
+    return ",".join(ordered) if ordered else "ALTRO"
+
+
+def _select_single_cert_type(multi_types: str) -> str:
+    # Priorità fissa per compatibilità col campo selection single-choice in Odoo.
+    for preferred in ["OPZIONE_2", "OPZIONE_1", "ALTRO"]:
+        if preferred in multi_types.split(","):
+            return preferred
     return "ALTRO"
 
 
@@ -137,6 +168,7 @@ def build_certificazioni_import(
     required = [
         "certification_id",
         "supplier_id",
+        "cert_cell_raw",
         "cert_name_raw",
         "cert_name_normalized",
         "expiry_date",
@@ -174,7 +206,11 @@ def build_certificazioni_import(
         (certs["expiry_date_fmt"] != "")
         & (certs["supplier_external_uid"].fillna("").astype(str).str.strip() != "")
     ].copy()
-    valid["tipo_certificazione"] = valid["cert_name_normalized"].apply(map_certificazione_tipo)
+    valid["tipi_certificazione_multi"] = valid.apply(
+        lambda row: _extract_multi_cert_types(row.get("cert_cell_raw", ""), row.get("cert_name_raw", "")),
+        axis=1,
+    )
+    valid["tipo_certificazione"] = valid["tipi_certificazione_multi"].apply(_select_single_cert_type)
 
     cert_id = valid["certification_id"].apply(_empty_if_na)
     generated = (
@@ -190,6 +226,7 @@ def build_certificazioni_import(
     out["external_uid"] = cert_id.where(cert_id != "", generated)
     out["fornitore_external_uid"] = valid["supplier_external_uid"].apply(_empty_if_na)
     out["tipo_certificazione"] = valid["tipo_certificazione"]
+    out["tipi_certificazione_multi"] = valid["tipi_certificazione_multi"]
     out["data_scadenza"] = valid["expiry_date_fmt"]
     out["nome_certificazione_altro"] = ""
     out.loc[
