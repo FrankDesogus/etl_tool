@@ -16,7 +16,24 @@ from normalize import (
 )
 from utils import now_iso
 
-CDC_RE = re.compile(r"^\(?\s*CDC\b", re.IGNORECASE)
+CDC_PREFIX_CLEAN_RE = re.compile(r"^[\s\(\[\{\-_/\\.]+")
+CDC_NON_ALNUM_RE = re.compile(r"[^A-Z0-9]+")
+
+
+def _job_cdc_starts_with_cdc(job_cdc_value: Any) -> bool:
+    """
+    Classify CDC/non-CDC from JOB/CDC with tolerant normalization.
+
+    We ignore leading wrappers/separators and punctuation inside the first token,
+    so values like "(CDC)", "C.D.C 123", "CDC123" are correctly treated as CDC.
+    """
+    job_cdc_norm = normalize_case_policy(job_cdc_value)
+    if not job_cdc_norm:
+        return False
+
+    cleaned_prefix = CDC_PREFIX_CLEAN_RE.sub("", job_cdc_norm)
+    alnum_only = CDC_NON_ALNUM_RE.sub("", cleaned_prefix)
+    return alnum_only.startswith("CDC")
 
 
 def _is_query_short_or_weak(order_supplier_key: str) -> bool:
@@ -116,7 +133,7 @@ def clean_and_match_orders(
 
         job_cdc_raw = r.get("job_cdc")
         job_cdc_norm = normalize_case_policy(job_cdc_raw)
-        job_cdc_is_cdc = bool(CDC_RE.match(job_cdc_norm))
+        job_cdc_is_cdc = _job_cdc_starts_with_cdc(job_cdc_raw)
 
         add_norm_log(
             norm_logs,
