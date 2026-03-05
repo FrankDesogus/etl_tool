@@ -456,13 +456,55 @@ def write_odoo_outputs(
     os.makedirs(odoo_dir, exist_ok=True)
 
     df_fornitori = build_fornitori_import(suppliers, run_ts, warnings)
+    supplier_uid_set = set(df_fornitori["external_uid"].fillna("").astype(str).str.strip())
+    supplier_uid_set.discard("")
+
     df_certificazioni, df_cert_missing_expiry = build_certificazioni_import(
         certs,
         registry_to_master_mapping,
         run_ts,
         warnings,
     )
+    if supplier_uid_set:
+        df_certificazioni = df_certificazioni[
+            df_certificazioni["fornitore_external_uid"].astype(str).isin(supplier_uid_set)
+        ].copy()
+    else:
+        df_certificazioni = df_certificazioni.iloc[0:0].copy()
+
     df_ordini, df_ordini_unmatched = build_ordini_import(orders, run_ts, warnings)
+
+    ordini_supplier_set = set(df_ordini["fornitore_external_uid"].fillna("").astype(str).str.strip())
+    ordini_supplier_set.discard("")
+    cert_supplier_set = set(df_certificazioni["fornitore_external_uid"].fillna("").astype(str).str.strip())
+    cert_supplier_set.discard("")
+
+    missing_ordini_suppliers = sorted(ordini_supplier_set - supplier_uid_set)
+    missing_cert_suppliers = sorted(cert_supplier_set - supplier_uid_set)
+
+    if missing_ordini_suppliers or missing_cert_suppliers:
+        validation_rows = [
+            {
+                "dataset": "ordini_import",
+                "fornitore_external_uid": uid,
+                "issue": "missing_in_fornitori_import",
+            }
+            for uid in missing_ordini_suppliers
+        ] + [
+            {
+                "dataset": "certificazioni_import",
+                "fornitore_external_uid": uid,
+                "issue": "missing_in_fornitori_import",
+            }
+            for uid in missing_cert_suppliers
+        ]
+        pd.DataFrame(validation_rows).to_csv(
+            os.path.join(odoo_dir, "bundle_integrity_issues.csv"), index=False
+        )
+        raise RuntimeError(
+            "Odoo bundle integrity error: ordini/certificazioni reference suppliers not present in fornitori_import. "
+            "See bundle_integrity_issues.csv"
+        )
 
     df_fornitori.to_csv(os.path.join(odoo_dir, "fornitori_import.csv"), index=False)
     df_certificazioni.to_csv(os.path.join(odoo_dir, "certificazioni_import.csv"), index=False)
@@ -470,6 +512,10 @@ def write_odoo_outputs(
     df_ordini_unmatched.to_csv(os.path.join(odoo_dir, "ordini_import_unmatched.csv"), index=False)
     df_cert_missing_expiry.to_csv(os.path.join(odoo_dir, "certificazioni_missing_expiry.csv"), index=False)
     pd.DataFrame(warnings).to_csv(os.path.join(odoo_dir, "odoo_export_warnings.csv"), index=False)
+
+    integrity_path = os.path.join(odoo_dir, "bundle_integrity_issues.csv")
+    if os.path.exists(integrity_path):
+        os.remove(integrity_path)
 
     return {
         "odoo_fornitori_rows": int(len(df_fornitori)),
