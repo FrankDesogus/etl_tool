@@ -20,6 +20,9 @@ ORDER_CANONICAL_MAP = {
     "DATA CONFERMAYA": "confirmed_date_raw",
     "DATA EFFETTIVA": "effective_date_raw",
     "JOB / CDC": "job_cdc",
+    "JOB/CDC": "job_cdc",
+    "JOB CDC": "job_cdc",
+    "JOB-CDC": "job_cdc",
     "STATO": "status",
 }
 
