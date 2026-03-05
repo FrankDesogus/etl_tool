@@ -48,7 +48,9 @@ def _write_non_cdc_pack(
         )
 
     # Filter orders (NON-CDC)
-    df_orders_non_cdc = df_orders_clean[df_orders_clean["job_cdc_is_cdc"] == False].copy()
+    df_orders_non_cdc = df_orders_clean[
+        ~df_orders_clean["job_cdc_is_cdc"].fillna(False).astype(bool)
+    ].copy()
     non_cdc_order_ids = set(df_orders_non_cdc["order_id"].astype(str))
     df_orders_supplier_cert_report_non_cdc = df_orders_supplier_cert_report[
         df_orders_supplier_cert_report["order_id"].astype(str).isin(non_cdc_order_ids)
@@ -252,6 +254,12 @@ def main():
         certs=df_certs,
     )
 
+    orders_cdc_count = int(
+        df_orders_clean.get("job_cdc_is_cdc", pd.Series(dtype=bool)).fillna(False).astype(bool).sum()
+    )
+    orders_total_count = int(len(df_orders_clean))
+    orders_non_cdc_count = int(max(0, orders_total_count - orders_cdc_count))
+
     (
         df_suppliers_master,
         df_suppliers_master_unmatched,
@@ -287,6 +295,9 @@ def main():
             "sheets_total": len(wb.sheetnames),
             "orders_rows_read": int(len(df_orders_raw)),
             "orders_rows_clean": int(len(df_orders_clean)),
+            "orders_rows_clean_total": orders_total_count,
+            "orders_rows_clean_cdc": orders_cdc_count,
+            "orders_rows_clean_non_cdc": orders_non_cdc_count,
             "orders_supplier_cert_report_rows": int(len(df_orders_supplier_cert_report)),
             "suppliers_rows_read": int(len(df_sup_all)),
             "suppliers_rows_clean": int(len(df_sup_dedup)),
@@ -355,7 +366,9 @@ def main():
                 "Update orders.clean_and_match_orders() to add CDC classification columns."
             )
 
-        df_orders_non_cdc = df_orders_clean[df_orders_clean["job_cdc_is_cdc"] == False].copy()
+        df_orders_non_cdc = df_orders_clean[
+            ~df_orders_clean["job_cdc_is_cdc"].fillna(False).astype(bool)
+        ].copy()
         odoo_non_cdc_counts = write_odoo_outputs(
             out_dir=os.path.join(out_dir, "non_cdc"),
             suppliers=df_suppliers_master,
@@ -390,6 +403,12 @@ def main():
         )
 
     print(f"Done. Outputs in: {out_dir}")
+    print(
+        "Orders split counters: "
+        f"total={orders_total_count}, "
+        f"cdc={orders_cdc_count}, "
+        f"non_cdc={orders_non_cdc_count}"
+    )
     if args.split_non_cdc:
         print(f"NON-CDC pack in: {os.path.join(out_dir, 'non_cdc')}")
 
