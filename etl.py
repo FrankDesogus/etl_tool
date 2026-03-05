@@ -358,6 +358,9 @@ def main():
         run_ts=now_iso(),
     )
     summary["counts"].update(odoo_counts)
+    summary["counts"]["odoo_fornitori_rows_full"] = int(odoo_counts.get("odoo_fornitori_rows", 0))
+    summary["counts"]["odoo_certificazioni_rows_full"] = int(odoo_counts.get("odoo_certificazioni_rows", 0))
+    summary["counts"]["odoo_ordini_rows_full"] = int(odoo_counts.get("odoo_ordini_rows", 0))
 
     if args.split_non_cdc:
         if "job_cdc_is_cdc" not in df_orders_clean.columns:
@@ -369,17 +372,41 @@ def main():
         df_orders_non_cdc = df_orders_clean[
             ~df_orders_clean["job_cdc_is_cdc"].fillna(False).astype(bool)
         ].copy()
+        non_cdc_supplier_uids = set(
+            df_orders_non_cdc.get("supplier_external_uid", pd.Series(dtype=str))
+            .fillna("")
+            .astype(str)
+            .str.strip()
+        )
+        non_cdc_supplier_uids.discard("")
+        df_suppliers_master_non_cdc = df_suppliers_master[
+            df_suppliers_master.get("supplier_external_uid", pd.Series(dtype=str))
+            .fillna("")
+            .astype(str)
+            .isin(non_cdc_supplier_uids)
+        ].copy()
+
+        df_registry_to_master_mapping_non_cdc = df_registry_to_master_mapping[
+            df_registry_to_master_mapping.get("supplier_external_uid", pd.Series(dtype=str))
+            .fillna("")
+            .astype(str)
+            .isin(non_cdc_supplier_uids)
+        ].copy()
+
         odoo_non_cdc_counts = write_odoo_outputs(
             out_dir=os.path.join(out_dir, "non_cdc"),
-            suppliers=df_suppliers_master,
+            suppliers=df_suppliers_master_non_cdc,
             certs=df_certs,
             orders=df_orders_non_cdc,
-            registry_to_master_mapping=df_registry_to_master_mapping,
+            registry_to_master_mapping=df_registry_to_master_mapping_non_cdc,
             run_ts=now_iso(),
         )
         summary["counts"].update(
             {f"odoo_non_cdc_{k.removeprefix('odoo_')}": v for k, v in odoo_non_cdc_counts.items()}
         )
+        summary["counts"]["odoo_fornitori_rows_non_cdc"] = int(odoo_non_cdc_counts.get("odoo_fornitori_rows", 0))
+        summary["counts"]["odoo_certificazioni_rows_non_cdc"] = int(odoo_non_cdc_counts.get("odoo_certificazioni_rows", 0))
+        summary["counts"]["odoo_ordini_rows_non_cdc"] = int(odoo_non_cdc_counts.get("odoo_ordini_rows", 0))
 
     with open(os.path.join(out_dir, "summary_report.json"), "w", encoding="utf-8") as f:
         json.dump(summary, f, ensure_ascii=False, indent=2)
